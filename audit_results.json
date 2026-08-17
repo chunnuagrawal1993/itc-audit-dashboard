@@ -1,0 +1,830 @@
+{
+  "aashirvaad": {
+    "name": "Aashirvaad",
+    "domain": "aashirvaad.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "bingo": {
+    "name": "Bingo! Snacks",
+    "domain": "bingosnacks.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "candyman": {
+    "name": "Candyman",
+    "domain": "candymanclub.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "pass",
+        "f": "Legal metrology declarations visible"
+      }
+    ]
+  },
+  "darkfantasy": {
+    "name": "Dark Fantasy Creations",
+    "domain": "darkfantasycreations.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "fail",
+        "f": "Missing link to itcportal.com"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "aashirvaad_dairy": {
+    "name": "Aashirvaad Dairy Delights",
+    "domain": "aashirvaaddairydelights.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "lets_live_young": {
+    "name": "Lets Live Young",
+    "domain": "letsliveyoung.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "sunrise_spices": {
+    "name": "Sunrise Spices",
+    "domain": "sunrisespices.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "pass",
+        "f": "Legal metrology declarations visible"
+      }
+    ]
+  },
+  "foodies_only": {
+    "name": "Foodies Only",
+    "domain": "foodiesonly.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "fail",
+        "f": "Missing link to itcportal.com"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "family_like_friends": {
+    "name": "Family Like Friends",
+    "domain": "familylikefriends.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "lets_boing": {
+    "name": "Lets Boing",
+    "domain": "letsboing.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "fabelle": {
+    "name": "Fabelle",
+    "domain": "fabelle.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "fail",
+        "f": "Missing link to itcportal.com"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "right_shift": {
+    "name": "Right Shift",
+    "domain": "rightshift.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "sunfeast_wowzers": {
+    "name": "Sunfeast Wowzers",
+    "domain": "sunfeastwowzers.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "bnatural": {
+    "name": "B Natural",
+    "domain": "bnatural.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "kitchens_of_india": {
+    "name": "Kitchens of India",
+    "domain": "kitchensofindia.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "fail",
+        "f": "Missing link to itcportal.com"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "moms_magic": {
+    "name": "Sunfeast Mom's Magic",
+    "domain": "sunfeastmomsmagic.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "itc_gifting": {
+    "name": "ITC Gifting",
+    "domain": "itcgifting.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "yippee": {
+    "name": "Sunfeast YiPPee!",
+    "domain": "sunfeastyippee.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "fail",
+        "f": "Missing link to itcportal.com"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "itcportal": {
+    "name": "ITC Portal",
+    "domain": "itcportal.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "master_chef": {
+    "name": "ITC Master Chef",
+    "domain": "itcmasterchef.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "marie_light": {
+    "name": "Sunfeast Marie Light",
+    "domain": "sunfeastmarielight.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "fantastik": {
+    "name": "Sunfeast Fantastik",
+    "domain": "sunfeastfantastik.com",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "pass",
+        "f": "ITC portal backlink present"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  },
+  "sunbean": {
+    "name": "Sunbean",
+    "domain": "sunbean.in",
+    "division": "ITC Foods",
+    "auditDate": "17 Aug 2026",
+    "checks": [
+      {
+        "id": 54,
+        "cat": "Security",
+        "name": "SSL / TLS Encryption",
+        "s": "pass",
+        "f": "HTTPS Active & Valid Certificate"
+      },
+      {
+        "id": 18,
+        "cat": "UI/UX",
+        "name": "Link to itcportal.com",
+        "s": "fail",
+        "f": "Missing link to itcportal.com"
+      },
+      {
+        "id": 50,
+        "cat": "Governance",
+        "name": "Terms & Privacy Policy",
+        "s": "pass",
+        "f": "Mandatory policy links detected"
+      },
+      {
+        "id": 46,
+        "cat": "Legal Metrology",
+        "name": "Packaged Goods Disclosures",
+        "s": "warn",
+        "f": "Declarations not explicitly detected"
+      }
+    ]
+  }
+}
