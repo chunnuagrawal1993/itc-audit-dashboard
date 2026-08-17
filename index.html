@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ITC Foods - Weekly Compliance Dashboard</title>
+<style>
+:root{--bg:#f8fafc;--card:#fff;--line:#e2e8f0;--ink:#0f172a;--pass:#16a34a;--fail:#dc2626;--warn:#d97706}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:var(--bg);color:var(--ink);padding:24px}
+.header{margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;cursor:pointer;transition:.15s}
+.card:hover{transform:translateY(-2px);border-color:#2563eb}
+.card h3{font-size:16px}
+.card p{font-size:12px;color:#64748b;margin:4px 0 12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:bold}
+.pass{background:#dcfce7;color:var(--pass)}
+.fail{background:#fee2e2;color:var(--fail)}
+.warn{background:#fef3c7;color:var(--warn)}
+table{width:100%;border-collapse:collapse;margin-top:20px;background:#fff;border-radius:8px;overflow:hidden}
+th,td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}
+th{background:#f1f5f9;font-size:11px;text-transform:uppercase;color:#475569}
+.back-btn{display:inline-block;margin-bottom:12px;color:#2563eb;text-decoration:none;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+<div id="app">Loading latest audit results...</div>
+
+<script>
+let AUDIT_DATA = {};
+
+fetch('./audit_results.json')
+  .then(res => res.json())
+  .then(data => {
+    AUDIT_DATA = data;
+    showOverview();
+  })
+  .catch(err => {
+    document.getElementById('app').innerHTML = `
+      <h2>No audit results found yet!</h2>
+      <p style="margin-top:8px">Please trigger your first scan in GitHub via the <b>Actions</b> tab.</p>
+    `;
+  });
+
+function showOverview() {
+  const keys = Object.keys(AUDIT_DATA);
+  let html = `<div class="header"><h1>ITC Foods Portfolio Compliance</h1><p>Automated weekly governance report (${keys.length} Properties)</p></div><div class="grid">`;
+  
+  keys.forEach(k => {
+    const site = AUDIT_DATA[k];
+    const passCount = site.checks.filter(c => c.s === 'pass').length;
+    const score = Math.round((passCount / site.checks.length) * 100);
+    html += `
+      <div class="card" onclick="showDetail('${k}')">
+        <h3>${site.name}</h3>
+        <p>${site.domain}</p>
+        <div>Score: <b>${score}%</b> (${passCount}/${site.checks.length} Checks passed)</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+  document.getElementById('app').innerHTML = html;
+}
+
+function showDetail(key) {
+  const site = AUDIT_DATA[key];
+  let rows = site.checks.map(c => `
+    <tr>
+      <td><b>${c.cat}</b></td>
+      <td>${c.name}</td>
+      <td><span class="badge ${c.s}">${c.s.toUpperCase()}</span></td>
+      <td>${c.f}</td>
+    </tr>
+  `).join('');
+
+  document.getElementById('app').innerHTML = `
+    <div class="back-btn" onclick="showOverview()">← Back to Overview</div>
+    <div class="header">
+      <h1>${site.name} Detailed Audit</h1>
+      <p>${site.domain} · Audited on ${site.auditDate}</p>
+    </div>
+    <table>
+      <thead><tr><th>Category</th><th>Checkpoint</th><th>Status</th><th>Observation</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+}
+</script>
+</body>
+</html>
