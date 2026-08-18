@@ -2,829 +2,6533 @@
   "aashirvaad": {
     "name": "Aashirvaad",
     "domain": "aashirvaad.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Staples",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Aashirvaad)",
+    "headline": "Weekly compliance audit for Aashirvaad (ITC Foods \u2014 Staples).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "Chunnu Agrawal",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://aashirvaad.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "Chunnu Agrawal"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Staples"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.07s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~0.5700000000000001s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.07s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "bingo": {
     "name": "Bingo! Snacks",
     "domain": "bingosnacks.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Snacks",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Bingo! Snacks)",
+    "headline": "Weekly compliance audit for Bingo! Snacks (ITC Foods \u2014 Snacks).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://bingosnacks.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Snacks"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.08s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~0.58s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.08s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "candyman": {
     "name": "Candyman",
     "domain": "candymanclub.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Confectionery",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Candyman)",
+    "headline": "Weekly compliance audit for Candyman (ITC Foods \u2014 Confectionery).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "pass",
-        "f": "Legal metrology declarations visible"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://candymanclub.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Confectionery"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "2.73s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~3.23s interactive time"
+      },
+      "23": {
+        "s": "warn",
+        "f": "~2.73s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "darkfantasy": {
     "name": "Dark Fantasy Creations",
     "domain": "darkfantasycreations.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Biscuits",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Dark Fantasy Creations)",
+    "headline": "Weekly compliance audit for Dark Fantasy Creations (ITC Foods \u2014 Biscuits).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "fail",
-        "f": "Missing link to itcportal.com"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://darkfantasycreations.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Biscuits"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.98s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "fail",
+        "f": "Missing direct link to itcportal.com"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.48s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.98s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "aashirvaad_dairy": {
     "name": "Aashirvaad Dairy Delights",
     "domain": "aashirvaaddairydelights.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Dairy",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Aashirvaad Dairy Delights)",
+    "headline": "Weekly compliance audit for Aashirvaad Dairy Delights (ITC Foods \u2014 Dairy).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://aashirvaaddairydelights.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Dairy"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.97s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.47s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.97s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "lets_live_young": {
     "name": "Lets Live Young",
     "domain": "letsliveyoung.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Health & Wellness",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Lets Live Young)",
+    "headline": "Weekly compliance audit for Lets Live Young (ITC Foods \u2014 Health & Wellness).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://letsliveyoung.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Health & Wellness"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.13s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.63s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.13s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "sunrise_spices": {
     "name": "Sunrise Spices",
     "domain": "sunrisespices.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Spices",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunrise Spices)",
+    "headline": "Weekly compliance audit for Sunrise Spices (ITC Foods \u2014 Spices).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "pass",
-        "f": "Legal metrology declarations visible"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "pass",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunrisespices.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Spices"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.3s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~0.8s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.3s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "pass",
+        "f": "All mandatory declarations present"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "foodies_only": {
     "name": "Foodies Only",
     "domain": "foodiesonly.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Culinary",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Foodies Only)",
+    "headline": "Weekly compliance audit for Foodies Only (ITC Foods \u2014 Culinary).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "fail",
-        "f": "Missing link to itcportal.com"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://foodiesonly.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Culinary"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "warn",
+        "f": "6.06s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "fail",
+        "f": "Missing direct link to itcportal.com"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "warn",
+        "f": "~6.56s interactive time"
+      },
+      "23": {
+        "s": "warn",
+        "f": "~6.06s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "warn",
+        "f": "Basic CSP; harden against XSS"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "family_like_friends": {
     "name": "Family Like Friends",
     "domain": "familylikefriends.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Community",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Family Like Friends)",
+    "headline": "Weekly compliance audit for Family Like Friends (ITC Foods \u2014 Community).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://familylikefriends.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Community"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.09s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.59s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.09s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "lets_boing": {
     "name": "Lets Boing",
     "domain": "letsboing.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Snacks",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Lets Boing)",
+    "headline": "Weekly compliance audit for Lets Boing (ITC Foods \u2014 Snacks).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://letsboing.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Snacks"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.61s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~2.1100000000000003s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.61s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "fabelle": {
     "name": "Fabelle",
     "domain": "fabelle.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Chocolates",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Fabelle)",
+    "headline": "Weekly compliance audit for Fabelle (ITC Foods \u2014 Chocolates).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "fail",
-        "f": "Missing link to itcportal.com"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://fabelle.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Chocolates"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.39s response time"
+      },
+      "12": {
+        "s": "warn",
+        "f": "Review social handle integration"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "fail",
+        "f": "Missing direct link to itcportal.com"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~0.89s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.39s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "right_shift": {
     "name": "Right Shift",
     "domain": "rightshift.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Nutrition",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Right Shift)",
+    "headline": "Weekly compliance audit for Right Shift (ITC Foods \u2014 Nutrition).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://rightshift.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Nutrition"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.78s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~2.2800000000000002s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.78s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "sunfeast_wowzers": {
     "name": "Sunfeast Wowzers",
     "domain": "sunfeastwowzers.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Biscuits",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunfeast Wowzers)",
+    "headline": "Weekly compliance audit for Sunfeast Wowzers (ITC Foods \u2014 Biscuits).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunfeastwowzers.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Biscuits"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.44s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.94s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.44s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "bnatural": {
     "name": "B Natural",
     "domain": "bnatural.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Beverages",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (B Natural)",
+    "headline": "Weekly compliance audit for B Natural (ITC Foods \u2014 Beverages).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://bnatural.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Beverages"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.96s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.46s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.96s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "kitchens_of_india": {
     "name": "Kitchens of India",
     "domain": "kitchensofindia.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Gourmet",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Kitchens of India)",
+    "headline": "Weekly compliance audit for Kitchens of India (ITC Foods \u2014 Gourmet).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "fail",
-        "f": "Missing link to itcportal.com"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://kitchensofindia.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Gourmet"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.1s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "fail",
+        "f": "Missing direct link to itcportal.com"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~0.6s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.1s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "moms_magic": {
     "name": "Sunfeast Mom's Magic",
     "domain": "sunfeastmomsmagic.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Biscuits",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunfeast Mom's Magic)",
+    "headline": "Weekly compliance audit for Sunfeast Mom's Magic (ITC Foods \u2014 Biscuits).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunfeastmomsmagic.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Biscuits"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.96s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.46s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.96s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "itc_gifting": {
     "name": "ITC Gifting",
     "domain": "itcgifting.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Corporate / D2C",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (ITC Gifting)",
+    "headline": "Weekly compliance audit for ITC Gifting (ITC Corporate / D2C).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://itcgifting.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Corporate / D2C"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.87s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.37s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.87s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "yippee": {
     "name": "Sunfeast YiPPee!",
     "domain": "sunfeastyippee.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Noodles",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunfeast YiPPee!)",
+    "headline": "Weekly compliance audit for Sunfeast YiPPee! (ITC Foods \u2014 Noodles).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "fail",
-        "f": "Missing link to itcportal.com"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunfeastyippee.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Noodles"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.13s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "fail",
+        "f": "Missing direct link to itcportal.com"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.63s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.13s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "itcportal": {
     "name": "ITC Portal",
     "domain": "itcportal.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Corporate",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (ITC Portal)",
+    "headline": "Weekly compliance audit for ITC Portal (ITC Corporate).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "Corp. Comms & IT",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://itcportal.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "Corp. Comms & IT"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Corporate"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.68s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~2.1799999999999997s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.68s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "master_chef": {
     "name": "ITC Master Chef",
     "domain": "itcmasterchef.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Frozen/Culinary",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (ITC Master Chef)",
+    "headline": "Weekly compliance audit for ITC Master Chef (ITC Foods \u2014 Frozen/Culinary).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://itcmasterchef.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Frozen/Culinary"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "0.97s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.47s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~0.97s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "marie_light": {
     "name": "Sunfeast Marie Light",
     "domain": "sunfeastmarielight.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Biscuits",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunfeast Marie Light)",
+    "headline": "Weekly compliance audit for Sunfeast Marie Light (ITC Foods \u2014 Biscuits).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunfeastmarielight.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Biscuits"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.03s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~1.53s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.03s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "fantastik": {
     "name": "Sunfeast Fantastik",
     "domain": "sunfeastfantastik.com",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Confectionery",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunfeast Fantastik)",
+    "headline": "Weekly compliance audit for Sunfeast Fantastik (ITC Foods \u2014 Confectionery).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "pass",
-        "f": "ITC portal backlink present"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "na",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunfeastfantastik.com"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Confectionery"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "2.15s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "pass",
+        "f": "Direct link available in footer navigation"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~2.65s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~2.15s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "na",
+        "f": "Not applicable \u2014 non-transactional domain"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   },
   "sunbean": {
     "name": "Sunbean",
     "domain": "sunbean.in",
-    "division": "ITC Foods",
-    "auditDate": "17 Aug 2026",
-    "checks": [
+    "division": "ITC Foods \u2014 Coffee",
+    "auditDate": "18 Aug 2026",
+    "ref": "ITC/SEC/AUDIT/2026-08 (Sunbean)",
+    "headline": "Weekly compliance audit for Sunbean (ITC Foods \u2014 Coffee).",
+    "domainInfo": {
+      "created": "Verified",
+      "updated": "Recent",
+      "expires": "Active",
+      "registrar": "Enterprise Registrar",
+      "registrant": "ITC Limited",
+      "email": "itccares@itc.in",
+      "manager": "ITC Digital Team",
+      "area": "India / Global"
+    },
+    "metrics": [
       {
-        "id": 54,
-        "cat": "Security",
-        "name": "SSL / TLS Encryption",
-        "s": "pass",
-        "f": "HTTPS Active & Valid Certificate"
+        "key": "speed",
+        "label": "Speed Index",
+        "v": 2.4,
+        "unit": "s"
       },
       {
-        "id": 18,
-        "cat": "UI/UX",
-        "name": "Link to itcportal.com",
-        "s": "fail",
-        "f": "Missing link to itcportal.com"
+        "key": "tti",
+        "label": "Time to Interactive",
+        "v": 3.0,
+        "unit": "s"
       },
       {
-        "id": 50,
-        "cat": "Governance",
-        "name": "Terms & Privacy Policy",
-        "s": "pass",
-        "f": "Mandatory policy links detected"
+        "key": "lcp",
+        "label": "Largest Contentful Paint",
+        "v": 1.8,
+        "unit": "s"
       },
       {
-        "id": 46,
-        "cat": "Legal Metrology",
-        "name": "Packaged Goods Disclosures",
-        "s": "warn",
-        "f": "Declarations not explicitly detected"
+        "key": "tbt",
+        "label": "Total Blocking Time",
+        "v": 150,
+        "unit": "ms"
       }
-    ]
+    ],
+    "disclosures": "fail",
+    "apps": [],
+    "f": {
+      "1": {
+        "s": "info",
+        "f": "https://sunbean.in"
+      },
+      "2": {
+        "s": "pass",
+        "f": "ITC Limited (Affiliated)"
+      },
+      "3": {
+        "s": "pass",
+        "f": "itccares@itc.in / contactus@itc.in"
+      },
+      "4": {
+        "s": "pass",
+        "f": "Active & Verified"
+      },
+      "5": {
+        "s": "pass",
+        "f": "Verified"
+      },
+      "6": {
+        "s": "pass",
+        "f": "Valid domain registration"
+      },
+      "7": {
+        "s": "pass",
+        "f": "ITC Digital Team"
+      },
+      "8": {
+        "s": "pass",
+        "f": "ITC Foods \u2014 Coffee"
+      },
+      "9": {
+        "s": "pass",
+        "f": "Authorised Registrar"
+      },
+      "10": {
+        "s": "pass",
+        "f": "Verified \u2014 exactly 59 parameters audited"
+      },
+      "11": {
+        "s": "pass",
+        "f": "1.78s response time"
+      },
+      "12": {
+        "s": "pass",
+        "f": "Active brand handles detected"
+      },
+      "13": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "14": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "15": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "16": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "17": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "18": {
+        "s": "fail",
+        "f": "Missing direct link to itcportal.com"
+      },
+      "19": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "20": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "21": {
+        "s": "pass",
+        "f": "Dynamic mobile-responsive viewport configured"
+      },
+      "22": {
+        "s": "pass",
+        "f": "~2.2800000000000002s interactive time"
+      },
+      "23": {
+        "s": "pass",
+        "f": "~1.78s Largest Contentful Paint"
+      },
+      "24": {
+        "s": "pass",
+        "f": "150ms Total Blocking Time benchmark"
+      },
+      "25": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "26": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "27": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "28": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "29": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "30": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "31": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "32": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "33": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "34": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "35": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "36": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "37": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "38": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "39": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "40": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "41": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "42": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "43": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "44": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "45": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "46": {
+        "s": "fail",
+        "f": "Mandatory declarations incomplete on D2C pages"
+      },
+      "47": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "48": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "49": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "50": {
+        "s": "pass",
+        "f": "Privacy Policy & Terms active in footer"
+      },
+      "51": {
+        "s": "pass",
+        "f": "Verified compliant"
+      },
+      "52": {
+        "s": "pass",
+        "f": "Grievance contact: contactus@itc.in listed"
+      },
+      "53": {
+        "s": "pass",
+        "f": "Copyright 2026 \u2014 updated"
+      },
+      "54": {
+        "s": "pass",
+        "f": "Active SSL/TLS Certificate \u2014 HTTPS enforced"
+      },
+      "55": {
+        "s": "pass",
+        "f": "CAA records prevent unauthorized issuance"
+      },
+      "56": {
+        "s": "pass",
+        "f": "CSP header configured"
+      },
+      "57": {
+        "s": "fail",
+        "f": "DNSSEC unsigned / disabled"
+      },
+      "58": {
+        "s": "warn",
+        "f": "DANE / TLSA record pending configuration"
+      },
+      "59": {
+        "s": "pass",
+        "f": "MIME type restriction active on document uploads"
+      }
+    }
   }
 }
