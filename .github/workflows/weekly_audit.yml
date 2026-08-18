@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,7 +23,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 dnspython
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 dnspython urllib3
 
       - name: Execute Audit for all 23 properties
         run: |
@@ -29,8 +32,7 @@ jobs:
 
       - name: Save Results & History Archives
         run: |
-          git config --global user.name "Audit Bot"
-          git config --global user.email "bot@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add audit_results.json history/
-          git commit -m "Auto-update weekly audit report and archive history [skip ci]" || echo "No changes"
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update weekly audit report and archive history [skip ci]" && git pull --rebase origin main && git push origin main)
