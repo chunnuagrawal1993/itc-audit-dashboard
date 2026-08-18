@@ -24,6 +24,18 @@ button{font-family:inherit;cursor:pointer}
 ::-webkit-scrollbar-thumb{background:#cbd4e3;border-radius:8px;border:2px solid var(--bg)}
 .app{display:grid;grid-template-columns:280px 1fr;min-height:100vh}
 
+/* Login Gateway Modal */
+#authOverlay{position:fixed;inset:0;background:rgba(15,23,42,0.95);backdrop-filter:blur(10px);z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px}
+.auth-box{background:#fff;border-radius:18px;width:100%;max-width:380px;padding:36px 28px;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);text-align:center}
+.auth-box img{height:54px;width:auto;object-fit:contain;margin-bottom:14px}
+.auth-box h2{font-size:19px;font-weight:700;color:#00338d}
+.auth-box p{font-size:12px;color:var(--ink2);margin:4px 0 22px}
+.auth-input{width:100%;padding:11px 14px;border:1px solid #cbd5e1;border-radius:10px;font-size:13px;outline:none;margin-bottom:12px;transition:0.15s}
+.auth-input:focus{border-color:#00338d;box-shadow:0 0 0 3px rgba(0,51,141,0.12)}
+.auth-btn{width:100%;padding:12px;background:#00338d;color:#fff;border:none;border-radius:10px;font-weight:600;font-size:13px;cursor:pointer;transition:0.15s;margin-top:4px}
+.auth-btn:hover{background:#002266}
+.auth-err{color:#ef4444;font-size:12px;font-weight:600;margin-top:12px;display:none}
+
 /* sidebar */
 .side{background:var(--surface);border-right:1px solid var(--line);position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
 .side .top{padding:16px 18px;border-bottom:1px solid var(--line2)}
@@ -46,6 +58,8 @@ button{font-family:inherit;cursor:pointer}
 .dlbtn{width:100%;border:none;background:var(--accent);color:#fff;padding:10px;border-radius:10px;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px}
 .dlbtn:hover{background:#002266}
 .dlbtn.ghost{background:var(--surface2);color:var(--ink2);border:1px solid var(--line);margin-top:8px}
+.logout-btn{width:100%;background:transparent;border:1px dashed #cbd5e1;color:var(--ink2);padding:8px;border-radius:8px;font-size:11px;font-weight:600;margin-top:8px}
+.logout-btn:hover{background:#fee2e2;color:#b91c1c;border-color:#fca5a5}
 
 /* main */
 .main{min-width:0;display:flex;flex-direction:column}
@@ -220,10 +234,24 @@ table.det tr:hover td{background:var(--surface2)}
 .empty{padding:34px;text-align:center;color:var(--ink3)}
 .menu-btn{display:none;border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:8px 11px;font-size:16px}
 @media(max-width:820px){.app{grid-template-columns:1fr}.side{position:fixed;left:-290px;z-index:100;transition:left .2s;box-shadow:0 0 40px rgba(0,0,0,.2)}.side.open{left:0}.menu-btn{display:inline-flex}.hero{grid-template-columns:1fr;justify-items:center;text-align:center}}
-@media print{.side,.topbar .right,.menu-btn,.toolbar,.history-dropdown{display:none}.app{grid-template-columns:1fr}body{background:#fff}.card{box-shadow:none}}
+@media print{.side,.topbar .right,.menu-btn,.toolbar,.history-dropdown,#authOverlay{display:none}.app{grid-template-columns:1fr}body{background:#fff}.card{box-shadow:none}}
 </style>
 </head>
 <body>
+
+<!-- Login Authentication Overlay -->
+<div id="authOverlay">
+  <div class="auth-box">
+    <img src="./itc-logo.png" alt="ITC Logo">
+    <h2>Compliance Console</h2>
+    <p>Authorized ITC personnel access only</p>
+    <input type="text" id="auth_user" class="auth-input" placeholder="Username" autocomplete="username">
+    <input type="password" id="auth_pass" class="auth-input" placeholder="Password" autocomplete="current-password" onkeypress="if(event.key==='Enter')handleLogin()">
+    <button class="auth-btn" onclick="handleLogin()">Sign In</button>
+    <div id="auth_err" class="auth-err">Invalid username or password.</div>
+  </div>
+</div>
+
 <div class="app">
   <aside class="side" id="side">
     <div class="top">
@@ -239,6 +267,7 @@ table.det tr:hover td{background:var(--surface2)}
     <div class="foot">
       <button class="dlbtn" onclick="downloadCSV()">⬇ Download report (CSV)</button>
       <button class="dlbtn ghost" onclick="window.print()">🖨 Print / Save as PDF</button>
+      <button class="logout-btn" onclick="logout()">🔒 Sign Out</button>
     </div>
   </aside>
   <div class="main">
@@ -259,6 +288,37 @@ table.det tr:hover td{background:var(--surface2)}
 </div>
 
 <script>
+/* --- Authentication Logic --- */
+const VALID_USER = "itcadmin";
+const VALID_PASS = "ITC@2026";
+
+function checkAuth() {
+  if (sessionStorage.getItem("itc_auth_valid") === "true") {
+    document.getElementById("authOverlay").style.display = "none";
+    initDashboard();
+  }
+}
+
+function handleLogin() {
+  const u = document.getElementById("auth_user").value.trim();
+  const p = document.getElementById("auth_pass").value;
+  if (u === VALID_USER && p === VALID_PASS) {
+    sessionStorage.setItem("itc_auth_valid", "true");
+    document.getElementById("authOverlay").style.display = "none";
+    initDashboard();
+  } else {
+    document.getElementById("auth_err").style.display = "block";
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem("itc_auth_valid");
+  window.location.reload();
+}
+
+checkAuth();
+
+/* --- Dashboard Engine --- */
 const CATEGORIES = [
   { id:"A", key:"domain",    name:"Domain Information",     icon:"🌐", range:"1–10",  desc:"Registration, WHOIS, ownership & audit integrity" },
   { id:"B", key:"uiux",      name:"UI/UX & Performance",    icon:"⚡", range:"11–24", desc:"Core Web Vitals, link health & interface usability" },
@@ -308,19 +368,21 @@ let SITES = {};
 let SITE_ORDER = [];
 let VIEW="portfolio", SITE=null, CAT=null, QUERY="";
 
-// Fetch Historical Index Manifest
-fetch('./history/index.json')
-  .then(res => res.json())
-  .then(history => {
-    const sel = document.getElementById('historySelect');
-    if (sel && Array.isArray(history) && history.length > 0) {
-      sel.innerHTML = '<option value="./audit_results.json">Latest Live Audit</option>' + 
-        history.map(h => `<option value="./${h.file}">Audit: ${h.display}</option>`).join('');
-    }
-  })
-  .catch(() => console.log('History manifest initialized.'));
+function initDashboard() {
+  fetch('./history/index.json')
+    .then(res => res.json())
+    .then(history => {
+      const sel = document.getElementById('historySelect');
+      if (sel && Array.isArray(history) && history.length > 0) {
+        sel.innerHTML = '<option value="./audit_results.json">Latest Live Audit</option>' + 
+          history.map(h => `<option value="./${h.file}">Audit: ${h.display}</option>`).join('');
+      }
+    })
+    .catch(() => console.log('History manifest loaded.'));
 
-// Load Specified Audit File
+  loadAuditFile('./audit_results.json');
+}
+
 function loadAuditFile(url) {
   fetch(url)
     .then(res => res.json())
@@ -337,9 +399,6 @@ function loadAuditFile(url) {
         </div>`;
     });
 }
-
-// Initial Load
-loadAuditFile('./audit_results.json');
 
 function counts(site,catId){const f=SITES[site].f,c={pass:0,warn:0,fail:0,na:0,info:0};PARAMS.filter(p=>!catId||p.cat===catId).forEach(p=>c[f[p.id].s]++);return c;}
 function score(c){const d=c.pass+c.warn+c.fail;return d?Math.round(c.pass/d*100):100;}
