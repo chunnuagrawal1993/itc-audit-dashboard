@@ -2,8 +2,8 @@ name: Weekly Audit Runner
 
 on:
   schedule:
-    - cron: '0 0 * * 1'  # Automatically runs every Monday at 00:00 UTC
-  workflow_dispatch:      # Allows manual trigger anytime
+    - cron: '0 0 * * 1'  # Runs every Monday at 00:00 UTC
+  workflow_dispatch:      # Allows manual one-click runs
 
 jobs:
   run-audit:
@@ -27,10 +27,10 @@ jobs:
         run: |
           python run_full_audit.py
 
-      - name: Save Results
+      - name: Save Results & History Archives
         run: |
           git config --global user.name "Audit Bot"
           git config --global user.email "bot@github.com"
-          git add audit_results.json
-          git commit -m "Auto-update weekly audit report across 23 websites" || echo "No changes"
+          git add audit_results.json history/
+          git commit -m "Auto-update weekly audit report and archive history [skip ci]" || echo "No changes"
           git push
