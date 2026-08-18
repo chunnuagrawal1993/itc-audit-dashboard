@@ -8,7 +8,7 @@
 :root{
   --bg:#eef1f6; --surface:#fff; --surface2:#f7f9fc;
   --ink:#182033; --ink2:#586179; --ink3:#8a94a9; --line:#e5e9f1; --line2:#eef2f8;
-  --accent:#00338d; --accent-soft:#eef2ff;
+  --accent:#3b5bdb; --accent-soft:#eef2ff;
   --pass:#12b76a; --pass-bg:#e7f7ef; --pass-ink:#0f8a52;
   --warn:#f59e0b; --warn-bg:#fef4e2; --warn-ink:#b6740a;
   --fail:#ef4444; --fail-bg:#fdecec; --fail-ink:#c53030;
@@ -22,15 +22,13 @@ body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;back
 button{font-family:inherit;cursor:pointer}
 ::-webkit-scrollbar{width:10px;height:10px}
 ::-webkit-scrollbar-thumb{background:#cbd4e3;border-radius:8px;border:2px solid var(--bg)}
-.app{display:grid;grid-template-columns:280px 1fr;min-height:100vh}
-
-/* sidebar */
+.app{display:grid;grid-template-columns:270px 1fr;min-height:100vh}
 .side{background:var(--surface);border-right:1px solid var(--line);position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
 .side .top{padding:18px 20px;border-bottom:1px solid var(--line2)}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-svg{flex:0 0 auto;width:44px;height:44px}
-.logo h1{font-size:14px;font-weight:700;line-height:1.15;color:#00338d}
-.logo p{font-size:11px;color:var(--ink3);margin-top:2px;letter-spacing:0.2px}
+.logo{display:flex;align-items:center;gap:11px}
+.logo .mark{width:38px;height:38px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px}
+.logo h1{font-size:14px;font-weight:700;line-height:1.15}
+.logo p{font-size:11px;color:var(--ink3);margin-top:1px}
 .navscroll{flex:1;overflow-y:auto;padding:10px 12px 16px}
 .grp{font-size:10px;font-weight:700;letter-spacing:.9px;color:var(--ink3);text-transform:uppercase;padding:14px 10px 6px}
 .nitem{display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;cursor:pointer;color:var(--ink2);transition:.12s;margin-bottom:2px}
@@ -44,10 +42,8 @@ button{font-family:inherit;cursor:pointer}
 .nsub{padding-left:8px;border-left:2px solid var(--line2);margin-left:14px}
 .side .foot{padding:12px;border-top:1px solid var(--line2)}
 .dlbtn{width:100%;border:none;background:var(--accent);color:#fff;padding:10px;border-radius:10px;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px}
-.dlbtn:hover{background:#002266}
+.dlbtn:hover{background:#2f4bc4}
 .dlbtn.ghost{background:var(--surface2);color:var(--ink2);border:1px solid var(--line);margin-top:8px}
-
-/* main */
 .main{min-width:0;display:flex;flex-direction:column}
 .topbar{background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:13px 30px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;z-index:20}
 .crumb{font-size:13px;color:var(--ink3);display:flex;align-items:center;gap:7px}
@@ -75,8 +71,6 @@ button{font-family:inherit;cursor:pointer}
 .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap}
 .badge .d{width:7px;height:7px;border-radius:50%}
 .tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
-
-/* ===== PORTFOLIO ===== */
 .pf-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:8px}
 .kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
 .kpi .t{font-size:12px;color:var(--ink2)}
@@ -94,8 +88,6 @@ button{font-family:inherit;cursor:pointer}
 .sitecard .mrow .mi b{display:block;font-size:18px;font-weight:800}
 .sitecard .mrow .mi span{color:var(--ink3);font-size:11px}
 .sitecard .go{margin-top:14px;font-size:13px;font-weight:600;color:var(--accent);display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--line2)}
-
-/* heatmap */
 .heatwrap{overflow-x:auto}
 table.heat-t{border-collapse:separate;border-spacing:6px;width:100%;min-width:640px}
 table.heat-t th{font-size:11px;color:var(--ink3);text-transform:uppercase;letter-spacing:.5px;padding:6px 10px;text-align:center;font-weight:700}
@@ -109,8 +101,6 @@ table.heat-t td.rowh small{display:block;color:var(--ink3);font-weight:400;font-
 .heat-legend{display:flex;gap:14px;margin-top:14px;font-size:11px;color:var(--ink2);flex-wrap:wrap;align-items:center}
 .heat-legend .sw{display:inline-flex;align-items:center;gap:6px}
 .heat-legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
-
-/* priority actions */
 .pa{display:flex;gap:13px;padding:14px 18px;border-bottom:1px solid var(--line2);align-items:flex-start}
 .pa:last-child{border-bottom:none}
 .pa .rank{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;flex:0 0 auto;margin-top:1px}
@@ -119,8 +109,6 @@ table.heat-t td.rowh small{display:block;color:var(--ink3);font-weight:400;font-
 .pa .pb .f{font-size:12px;color:var(--ink2);margin-top:3px}
 .pa .sitepill{font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;background:var(--accent-soft);color:var(--accent);cursor:pointer}
 .sev{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px}
-
-/* ===== WEBSITE VIEW ===== */
 .hero{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;padding:24px 26px;margin-bottom:18px}
 .hero-info .rate{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px}
 .hero-info h3{font-size:16px;margin-top:12px}
@@ -152,12 +140,9 @@ table.heat-t td.rowh small{display:block;color:var(--ink3);font-weight:400;font-
 .issue .f{font-size:12px;color:var(--ink2);margin-top:3px}
 .emptyok{padding:30px;text-align:center;color:var(--ink2)}
 .emptyok .big{font-size:30px}
-
-/* ===== SECTION VIEWS ===== */
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-@media(max-width:1080px){.grid2,.grid3,.grid4{grid-template-columns:1fr}.pf-kpis{grid-template-columns:repeat(2,1fr)}.sitecards{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
 .metric{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
 .metric .top{display:flex;justify-content:space-between;align-items:flex-start}
 .metric .lab{font-size:12px;color:var(--ink2)}
@@ -195,11 +180,6 @@ table.heat-t td.rowh small{display:block;color:var(--ink3);font-weight:400;font-
 .shield b{font-size:13px;display:block}
 .shield .st{margin-top:10px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;display:inline-block}
 .shield p{font-size:11px;color:var(--ink2);margin-top:10px;line-height:1.4}
-.appcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
-.appcard .ic{width:46px;height:46px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;font-size:22px}
-.appcard b{font-size:15px;display:block;margin-top:12px}
-.appcard .aud{font-size:12px;color:var(--ink2);margin-top:4px}
-.appcard .note{margin-top:12px;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;display:inline-block}
 .callout{display:flex;gap:18px;align-items:center;padding:22px 26px}
 .callout .big{width:70px;height:70px;border-radius:16px;display:grid;place-items:center;font-size:34px;flex:0 0 auto}
 .callout h3{font-size:18px}
@@ -224,22 +204,7 @@ table.det tr:hover td{background:var(--surface2)}
 <body>
 <div class="app">
   <aside class="side" id="side">
-    <div class="top">
-      <div class="logo">
-        <svg class="logo-svg" viewBox="0 0 340 380" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="170,18 325,290 15,290" fill="none" stroke="#00338d" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
-          <polygon points="170,36 150,210 190,210" fill="#00338d"/>
-          <polygon points="50,285 96,170 126,170 80,285" fill="#00338d"/>
-          <polygon points="135,170 205,170 205,190 178,190 178,285 162,285 162,190 135,190" fill="#00338d"/>
-          <polygon points="214,285 260,170 290,170 244,285" fill="#00338d"/>
-          <text x="170" y="348" font-family="'Times New Roman', Georgia, serif" font-size="34" font-weight="bold" fill="#00338d" text-anchor="middle" letter-spacing="1">Enduring Value</text>
-        </svg>
-        <div>
-          <h1>ITC Limited</h1>
-          <p>Compliance Console</p>
-        </div>
-      </div>
-    </div>
+    <div class="top"><div class="logo"><div class="mark">ITC</div><div><h1>Compliance Console</h1><p>Website Governance Audit</p></div></div></div>
     <div class="navscroll" id="navscroll"></div>
     <div class="foot">
       <button class="dlbtn" onclick="downloadCSV()">⬇ Download report (CSV)</button>
@@ -257,7 +222,6 @@ table.det tr:hover td{background:var(--surface2)}
     <div class="content" id="content"></div>
   </div>
 </div>
-
 <script>
 const CATEGORIES = [
   { id:"A", key:"domain",    name:"Domain Information",     icon:"🌐", range:"1–10",  desc:"Registration, WHOIS, ownership & audit integrity" },
@@ -319,7 +283,7 @@ fetch('./audit_results.json')
     document.getElementById('content').innerHTML = `
       <div class="card pad" style="text-align:center">
         <h2>Weekly Audit Results Initializing...</h2>
-        <p style="margin-top:8px;color:var(--ink2)">Trigger your GitHub Action workflow to populate your live multi-domain audit results.</p>
+        <p style="margin-top:8px;color:var(--ink2)">Please run your GitHub Action workflow or wait for the initial weekly run to complete.</p>
       </div>`;
   });
 
@@ -354,7 +318,7 @@ function drillFromHeat(k,id){SITE=k;VIEW="section";CAT=id;QUERY="";render();}
 function render(){
   renderSide();document.getElementById("side").classList.remove("open");
   const cr=document.getElementById("crumb");
-  if(VIEW==="portfolio"){cr.innerHTML=`<b>Portfolio</b>`;document.getElementById("updated").textContent=`${SITE_ORDER.length} websites · Weekly Governance Engine`;renderPortfolio();}
+  if(VIEW==="portfolio"){cr.innerHTML=`<b>Portfolio</b>`;document.getElementById("updated").textContent=`${SITE_ORDER.length} websites · Weekly Automated Audit`;renderPortfolio();}
   else{document.getElementById("updated").textContent="Audited "+SITES[SITE].auditDate;
     if(VIEW==="site"){cr.innerHTML=`<a onclick="goPortfolio()">Portfolio</a><span class="sep">›</span><b>${SITES[SITE].name}</b>`;renderSite();}
     else{const cat=CATEGORIES.find(c=>c.id===CAT);cr.innerHTML=`<a onclick="goPortfolio()">Portfolio</a><span class="sep">›</span><a onclick="goSite('${SITE}')">${SITES[SITE].name}</a><span class="sep">›</span><b>${cat.name}</b>`;renderSection();}}
@@ -379,9 +343,9 @@ function renderPortfolio(){
 
   let heat=`<div class="heatwrap"><table class="heat-t"><thead><tr><th class="rowh">Section</th>`;
   SITE_ORDER.forEach(k=>heat+=`<th>${SITES[k].name}</th>`);heat+=`</tr></thead><tbody>`;
-  CATEGORIES.forEach(cat=>{heat+=`<tr><td class="rowh">${cat.icon} ${cat.name}<small>Params${cat.range}</small></td>`;
+  CATEGORIES.forEach(cat=>{heat+=`<tr><td class="rowh">${cat.icon} ${cat.name}<small>Params ${cat.range}</small></td>`;
     SITE_ORDER.forEach(k=>{const cc=counts(k,cat.id),csc=score(cc),rt=rating(csc);
-      heat+=`<td><div class="hc soft-${rt[1]}" onclick="drillFromHeat('${k}','${cat.id}')"><b>${csc}%</b><small>${cc.pass}✓${cc.fail?cc.fail+'✕ ':''}${cc.warn?cc.warn+'! ':''}${cc.na?cc.na+'∅':''}</small></div></td>`;});
+      heat+=`<td><div class="hc soft-${rt[1]}" onclick="drillFromHeat('${k}','${cat.id}')"><b>${csc}%</b><small>${cc.pass}✓ ${cc.fail?cc.fail+'✕ ':''}${cc.warn?cc.warn+'! ':''}${cc.na?cc.na+'∅':''}</small></div></td>`;});
     heat+=`</tr>`;});
   heat+=`</tbody></table></div>
     <div class="heat-legend"><span class="sw"><i class="soft-pass" style="background:var(--pass-bg)"></i>Compliant ≥75%</span><span class="sw"><i class="soft-warn" style="background:var(--warn-bg)"></i>Partial 55–74%</span><span class="sw"><i class="soft-fail" style="background:var(--fail-bg)"></i>Action req. &lt;55%</span><span style="margin-left:auto;color:var(--ink3)">✓ pass · ✕ fail · ! review · ∅ n/a</span></div>`;
@@ -410,14 +374,14 @@ function renderSite(){
   const td=[["pass","Compliant",c.pass],["warn","Needs Attention",c.warn],["fail","Non-Compliant",c.fail],["na","Not Applicable",c.na],["info","Informational",c.info]];
   const tiles=td.map(([k,l,n])=>`<div class="tile"><div class="t"><span class="d bg-${k}"></span>${l}</div><div class="n s-${k}">${n}</div><div class="p">${Math.round(n/59*100)}% of 59</div></div>`).join("");
   const secRows=CATEGORIES.map(cat=>{const cc=counts(SITE,cat.id),csc=score(cc),crt=rating(csc),open=cc.fail+cc.warn;
-    return `<div class="secrow" onclick="goSection('${cat.id}')"><div class="ic">${cat.icon}</div><div class="nm"><b>${cat.name}</b><small>Params ${cat.range} ·${cat.desc}</small></div><div class="mini">${miniBar(cc)}</div><div class="scwrap">${open?`<span class="tag soft-${cc.fail?'fail':'warn'}">${open} open</span>`:`<span class="tag soft-pass">Clear</span>`}<span class="pct s-${crt[1]}">${csc}%</span></div><div class="chev">›</div></div>`;}).join("");
+    return `<div class="secrow" onclick="goSection('${cat.id}')"><div class="ic">${cat.icon}</div><div class="nm"><b>${cat.name}</b><small>Params ${cat.range} · ${cat.desc}</small></div><div class="mini">${miniBar(cc)}</div><div class="scwrap">${open?`<span class="tag soft-${cc.fail?'fail':'warn'}">${open} open</span>`:`<span class="tag soft-pass">Clear</span>`}<span class="pct s-${crt[1]}">${csc}%</span></div><div class="chev">›</div></div>`;}).join("");
   const issues=openIssues(SITE).sort((a,b)=>(s.f[a.id].s==="fail"?0:1)-(s.f[b.id].s==="fail"?0:1));
   const issueHtml=issues.length?issues.map(p=>{const st=s.f[p.id].s,cat=CATEGORIES.find(c=>c.id===p.cat);return `<div class="issue"><div class="bar bg-${st}"></div><div><div class="h">#${p.id} ${p.name}<span class="sev soft-${st}">${st==="fail"?"High":"Medium"}</span><span class="sev soft-na" onclick="goSection('${cat.id}')" style="cursor:pointer">${cat.name}</span></div><div class="f">${s.f[p.id].f}</div></div></div>`;}).join(""):`<div class="emptyok"><div class="big">✅</div><b>No open issues</b><br><span style="font-size:12px;color:var(--ink3)">All scored parameters compliant.</span></div>`;
   document.getElementById("content").innerHTML=`
-    <div class="page-h"><h2>${s.name} — Compliance Overview</h2><p>${s.domain} ·${s.division}</p></div>
+    <div class="page-h"><h2>${s.name} — Compliance Overview</h2><p>${s.domain} · ${s.division}</p></div>
     <div class="card hero"><div class="ring" style="width:132px;height:132px">${ring(c,132)}<div class="val"><b class="s-${rt[1]}" style="font-size:30px">${sc}%</b><small>overall</small></div></div>
-      <div class="hero-info"><span class="rate soft-${rt[1]}">● ${rt[0]}</span><h3>${c.pass} of${scored} scored parameters compliant</h3><div class="desc">${s.headline}</div>
-        <div class="ref"><span><b>Framework:</b> 59 params · 7 sections</span><span><b>Audited:</b> ${s.auditDate}</span><span><b>Ref:</b>${s.ref}</span></div></div></div>
+      <div class="hero-info"><span class="rate soft-${rt[1]}">● ${rt[0]}</span><h3>${c.pass} of ${scored} scored parameters compliant</h3><div class="desc">${s.headline}</div>
+        <div class="ref"><span><b>Framework:</b> 59 params · 7 sections</span><span><b>Audited:</b> ${s.auditDate}</span><span><b>Ref:</b> ${s.ref}</span></div></div></div>
     <div class="tiles">${tiles}</div>
     <div class="block-title">Compliance by section <span class="hint">— click a row to open its purpose-built view</span></div>
     <div class="card seclist">${secRows}</div>
@@ -427,14 +391,50 @@ function renderSite(){
 
 function param(id){return{p:PARAMS.find(x=>x.id===id),d:SITES[SITE].f[id]};}
 function checkItem(id){const{p,d}=param(id);const ic={pass:"✓",warn:"!",fail:"✕",na:"–",info:"i"}[d.s];return `<div class="chk"><div class="ci bg-${d.s}">${ic}</div><div class="cb"><b>${p.name}</b><p>${d.f}</p></div></div>`;}
-function sectionHeader(cat,cc){const csc=score(cc),rt=rating(csc);return `<div class="card hero" style="padding:20px 24px;margin-bottom:18px"><div class="ring" style="width:104px;height:104px">${ring(cc,104)}<div class="val"><b class="s-${rt[1]}" style="font-size:24px">${csc}%</b></div></div><div class="hero-info"><span class="rate soft-${rt[1]}">● ${rt[0]}</span><h3>${cc.pass} of${cc.pass+cc.warn+cc.fail} scored parameters compliant</h3><div class="desc">${cat.desc}.</div></div></div>`;}
+function sectionHeader(cat,cc){const csc=score(cc),rt=rating(csc);return `<div class="card hero" style="padding:20px 24px;margin-bottom:18px"><div class="ring" style="width:104px;height:104px">${ring(cc,104)}<div class="val"><b class="s-${rt[1]}" style="font-size:24px">${csc}%</b></div></div><div class="hero-info"><span class="rate soft-${rt[1]}">● ${rt[0]}</span><h3>${cc.pass} of ${cc.pass+cc.warn+cc.fail} scored parameters compliant</h3><div class="desc">${cat.desc}.</div></div></div>`;}
 function detailTable(catId){const s=SITES[SITE],q=QUERY.toLowerCase();const rows=PARAMS.filter(p=>p.cat===catId).filter(p=>!q||p.name.toLowerCase().includes(q)||s.f[p.id].f.toLowerCase().includes(q));
   const body=rows.length?rows.map(p=>`<tr><td class="pnum">${p.id}</td><td class="pname">${p.name}</td><td>${statusBadge(s.f[p.id].s)}</td><td class="finding">${s.f[p.id].f}</td></tr>`).join(""):`<tr><td colspan="4" class="empty">No parameters match.</td></tr>`;
-  return `<div class="toolbar"><div class="block-title" style="margin:0">All parameter details <span class="hint">(${rows.length})</span></div><input class="srch" id="srch" placeholder="🔍 Filter parameters…" value="${QUERY}" oninput="QUERY=this.value;document.getElementById('tbody').innerHTML=detailRows('${catId}')"></div><div class="card"><table class="det"><thead><tr><th style="width:44px">#</th><th style="width:26\%">Parameter</th><th style="width:150px">Status</th><th>Finding / Observation</th></tr></thead><tbody id="tbody">${body}</tbody></table></div>`;}
+  return `<div class="toolbar"><div class="block-title" style="margin:0">All parameter details <span class="hint">(${rows.length})</span></div><input class="srch" id="srch" placeholder="🔍 Filter parameters…" value="${QUERY}" oninput="QUERY=this.value;document.getElementById('tbody').innerHTML=detailRows('${catId}')"></div><div class="card"><table class="det"><thead><tr><th style="width:44px">#</th><th style="width:26%">Parameter</th><th style="width:150px">Status</th><th>Finding / Observation</th></tr></thead><tbody id="tbody">${body}</tbody></table></div>`;}
 function detailRows(catId){const s=SITES[SITE],q=QUERY.toLowerCase();const rows=PARAMS.filter(p=>p.cat===catId).filter(p=>!q||p.name.toLowerCase().includes(q)||s.f[p.id].f.toLowerCase().includes(q));return rows.length?rows.map(p=>`<tr><td class="pnum">${p.id}</td><td class="pname">${p.name}</td><td>${statusBadge(s.f[p.id].s)}</td><td class="finding">${s.f[p.id].f}</td></tr>`).join(""):`<tr><td colspan="4" class="empty">No parameters match.</td></tr>`;}
 
 function renderSection(){
   const cat=CATEGORIES.find(c=>c.id===CAT),cc=counts(SITE,CAT),s=SITES[SITE];let meaningful="";
   if(CAT==="A")meaningful=viewDomain(s);else if(CAT==="B")meaningful=viewPerf(s);else if(CAT==="C")meaningful=viewContent(s);
   else if(CAT==="D")meaningful=viewMetrology(s);else if(CAT==="E")meaningful=viewApps(s);else if(CAT==="F")meaningful=viewPolicies(s);else if(CAT==="G")meaningful=viewSecurity(s);
-  document.getElementById("content").innerHTML=`<div class="page-h"><h2>${cat.icon} ${cat.name}</h2><p>${s.name} · Parameters
+  document.getElementById("content").innerHTML=`<div class="page-h"><h2>${cat.icon} ${cat.name}</h2><p>${s.name} · Parameters ${cat.range}</p></div>${sectionHeader(cat,cc)}${meaningful}${detailTable(CAT)}`;
+}
+function viewDomain(s){const di=s.domainInfo;
+  const timeline=`<div class="card timeline"><div class="tstep"><div class="dot bg-pass"></div><div class="tl">Created</div><div class="td">${di.created}</div></div><div class="tstep"><div class="dot bg-info"></div><div class="tl">Last Updated</div><div class="td">${di.updated}</div></div><div class="tstep"><div class="dot bg-warn"></div><div class="tl">Expires</div><div class="td">${di.expires}</div></div></div>`;
+  const kv=[["Registrant",di.registrant,param(2).d.s],["Contact Email",di.email,param(3).d.s],["Registrar",di.registrar,param(9).d.s],["Content Manager",di.manager,param(7).d.s],["Area of Operation",di.area,param(8).d.s],["Full URL",param(1).d.f,"info"],["Checks Integrity",param(10).d.f,param(10).d.s]];
+  const whois=`<div class="card kv">${kv.map(([k,v,st])=>`<div class="kvrow"><div class="k">${k}</div><div class="v s-${st==='info'?'na':st}">${v}</div></div>`).join("")}</div>`;
+  return `<div class="block-title">Registration lifecycle</div>${timeline}<div class="block-title">WHOIS &amp; ownership record</div>${whois}`;
+}
+function viewPerf(s){
+  const cards=s.metrics.map(m=>{const rt=metricRate(m.key,m.v);const t=PERF_T[m.key];const rl={pass:"Good",warn:"Needs work",fail:"Poor",na:"Pending"}[rt];const pos=m.v==null?50:Math.min(96,Math.max(4,m.v/(t[1]*1.4)*100));
+    return `<div class="metric"><div class="top"><div class="lab">${m.label}</div><span class="rlab soft-${rt}">${rl}</span></div><div class="v s-${rt}">${m.v==null?'—':m.v}<small> ${m.unit}</small></div><div class="gaugebar"><i style="left:calc(${pos}% - 7px)"></i></div><div class="thresh"><span>Fast</span><span>Good ≤${t[0]}${m.unit}</span><span>Slow</span></div></div>`;}).join("");
+  const funcIds=[21,12,14,13,15,19,16,17,18,20];
+  return `<div class="block-title">Core Web Vitals <span class="hint">— measured against Google Lighthouse thresholds</span></div><div class="grid4">${cards}</div><div class="block-title">Functional &amp; usability checks</div><div class="card checklist">${funcIds.map(id=>checkItem(id)).join("")}</div>`;
+}
+function viewContent(s){const groups=CONTENT_GROUPS.map(g=>{const cc={pass:0,warn:0,fail:0,na:0,info:0};g.ids.forEach(id=>cc[s.f[id].s]++);const gsc=score(cc),rt=rating(gsc);
+  return `<div class="card"><div class="grouphd"><span class="gi">${g.icon}</span><b>${g.title}</b><span class="gsc s-${rt[1]}">${gsc}%</span></div><div class="checklist">${g.ids.map(id=>checkItem(id)).join("")}</div></div>`;}).join("");
+  return `<div class="block-title">Content &amp; brand compliance <span class="hint">— grouped by theme</span></div><div class="grid2">${groups}</div>`;}
+function viewMetrology(s){const st=s.disclosures;const map={pass:["✅","var(--pass-bg)","All 7 mandatory declarations present","Product & D2C layers fully compliant with Legal Metrology (Packaged Commodities) Rules."],fail:["⛔","var(--fail-bg)","All 7 mandatory declarations missing","Non-compliant with Legal Metrology (Packaged Commodities) Rules — remediation required before D2C sale."],na:["➖","var(--na-bg)","Not applicable","Non-transactional corporate domain — no packaged-commodity declarations required."]};const m=map[st];
+  const list=LM_DISCLOSURES.map(d=>{const ic=st==="pass"?"✓":st==="fail"?"✕":"–";return `<div class="chk"><div class="ci bg-${st}">${ic}</div><div class="cb"><b>${d}</b></div></div>`;}).join("");
+  return `<div class="card callout"><div class="big" style="background:${m[1]}">${m[0]}</div><div><h3 class="s-${st}">${m[2]}</h3><p>${m[3]}</p></div></div><div class="block-title">The 7 mandatory disclosures</div><div class="card checklist">${list}</div>`;}
+function viewApps(s){if(!s.apps.length)return `<div class="card callout"><div class="big" style="background:var(--na-bg)">📱</div><div><h3 class="s-na">No associated mobile app</h3><p>${param(47).d.f}</p></div></div>`;
+  const cards=s.apps.map(a=>`<div class="appcard"><div class="ic">📱</div><b>${a.name}</b><div class="aud">👥 ${a.aud}</div><span class="note soft-${a.st}">${a.note}</span></div>`).join("");
+  return `<div class="block-title">Associated apps &amp; target demographics</div><div class="grid3">${cards}</div>`;}
+function viewPolicies(s){const items=[[50,"📄","Terms of Use & Privacy Policy"],[52,"🧑‍⚖️","Grievance Officer Listed"],[51,"©️","Credits / Source Acknowledgment"],[53,"🗓️","Copyright Year & T&C Freshness"]];
+  const cards=items.map(([id,ic,title])=>{const d=s.f[id];const stl={pass:"Compliant",warn:"Verify",fail:"Missing",na:"N/A",info:"Info"}[d.s];return `<div class="shield"><div class="ic soft-${d.s}">${ic}</div><b>${title}</b><div class="st soft-${d.s}">${stl}</div><p>${d.f}</p></div>`;}).join("");
+  return `<div class="block-title">Governance &amp; policy posture</div><div class="grid4">${cards}</div>`;}
+function viewSecurity(s){const items=[[54,"🔐","SSL / TLS"],[55,"📜","CAA Records"],[56,"🛡️","Content Security Policy"],[57,"🔗","DNSSEC"],[58,"🧬","DANE / TLSA"],[59,"📤","Upload Security"]];
+  const cards=items.map(([id,ic,title])=>{const d=s.f[id];const stl={pass:"Secure",warn:"Harden",fail:"At Risk",na:"N/A",info:"Info"}[d.s];return `<div class="shield"><div class="ic soft-${d.s}">${ic}</div><b>${title}</b><div class="st soft-${d.s}">${stl}</div><p>${d.f}</p></div>`;}).join("");
+  const cc=counts(SITE,"G");const note=cc.fail?`<div class="card callout" style="margin-bottom:18px"><div class="big" style="background:var(--fail-bg)">⚠️</div><div><h3 class="s-fail">${cc.fail} control${cc.fail>1?'s':''} at risk</h3><p>Immediate DNS/security hardening recommended to close exposure.</p></div></div>`:(cc.warn?`<div class="card callout" style="margin-bottom:18px"><div class="big" style="background:var(--warn-bg)">🔧</div><div><h3 class="s-warn">${cc.warn} control${cc.warn>1?'s':''} to harden</h3><p>Baseline is secure; refine remaining headers for defense-in-depth.</p></div></div>`:`<div class="card callout" style="margin-bottom:18px"><div class="big" style="background:var(--pass-bg)">🛡️</div><div><h3 class="s-pass">Fully hardened</h3><p>All six security &amp; DNS controls implemented.</p></div></div>`);
+  return `${note}<div class="block-title">Security &amp; DNS scorecard</div><div class="grid3">${cards}</div>`;}
+
+function downloadCSV(){const rows=SITE?[SITE]:SITE_ORDER;let csv="ITC Website Compliance Audit\n\n";
+  rows.forEach(k=>{const s=SITES[k],c=counts(k),sc=score(c);csv+=`Website,${s.name}\nDomain,${s.domain}\nDivision,${s.division}\nAudit Date,${s.auditDate}\nReference,${s.ref}\nOverall,${sc}%\nCompliant,${c.pass}\nAttention,${c.warn}\nNon-Compliant,${c.fail}\nN/A,${c.na}\nInfo,${c.info}\nID,Section,Parameter,Status,Finding\n`;PARAMS.forEach(p=>{const cat=CATEGORIES.find(x=>x.id===p.cat).name;csv+=`${p.id},"${cat}","${p.name}",${SLABEL[s.f[p.id].s]},"${String(s.f[p.id].f).replace(/"/g,'""')}"\n`;});csv+="\n";});
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8;"}));a.download=`ITC_Compliance_${SITE?SITES[SITE].name.replace(/[^a-z0-9]/gi,''):'Portfolio'}.csv`;a.click();}
+</script>
+</body>
+</html>
