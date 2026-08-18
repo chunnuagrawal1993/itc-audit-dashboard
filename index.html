@@ -2,89 +2,439 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ITC Foods - Weekly Compliance Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITC Website Compliance Dashboard</title>
 <style>
-:root{--bg:#f8fafc;--card:#fff;--line:#e2e8f0;--ink:#0f172a;--pass:#16a34a;--fail:#dc2626;--warn:#d97706}
+:root{
+  --bg:#eef1f6; --surface:#fff; --surface2:#f7f9fc;
+  --ink:#182033; --ink2:#586179; --ink3:#8a94a9; --line:#e5e9f1; --line2:#eef2f8;
+  --accent:#3b5bdb; --accent-soft:#eef2ff;
+  --pass:#12b76a; --pass-bg:#e7f7ef; --pass-ink:#0f8a52;
+  --warn:#f59e0b; --warn-bg:#fef4e2; --warn-ink:#b6740a;
+  --fail:#ef4444; --fail-bg:#fdecec; --fail-ink:#c53030;
+  --na:#94a3b8;   --na-bg:#eef1f6;   --na-ink:#647085;
+  --info:#0ea5e9; --info-bg:#e6f6fe; --info-ink:#0b82b8;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 3px 12px rgba(16,24,40,.05);
+  --r:14px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:sans-serif;background:var(--bg);color:var(--ink);padding:24px}
-.header{margin-bottom:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;cursor:pointer;transition:.15s}
-.card:hover{transform:translateY(-2px);border-color:#2563eb}
-.card h3{font-size:16px}
-.card p{font-size:12px;color:#64748b;margin:4px 0 12px}
-.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:bold}
-.pass{background:#dcfce7;color:var(--pass)}
-.fail{background:#fee2e2;color:var(--fail)}
-.warn{background:#fef3c7;color:var(--warn)}
-table{width:100%;border-collapse:collapse;margin-top:20px;background:#fff;border-radius:8px;overflow:hidden}
-th,td{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}
-th{background:#f1f5f9;font-size:11px;text-transform:uppercase;color:#475569}
-.back-btn{display:inline-block;margin-bottom:12px;color:#2563eb;text-decoration:none;font-weight:600;cursor:pointer}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button{font-family:inherit;cursor:pointer}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:#cbd4e3;border-radius:8px;border:2px solid var(--bg)}
+.app{display:grid;grid-template-columns:270px 1fr;min-height:100vh}
+.side{background:var(--surface);border-right:1px solid var(--line);position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.side .top{padding:18px 20px;border-bottom:1px solid var(--line2)}
+.logo{display:flex;align-items:center;gap:11px}
+.logo .mark{width:38px;height:38px;border-radius:10px;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px}
+.logo h1{font-size:14px;font-weight:700;line-height:1.15}
+.logo p{font-size:11px;color:var(--ink3);margin-top:1px}
+.navscroll{flex:1;overflow-y:auto;padding:10px 12px 16px}
+.grp{font-size:10px;font-weight:700;letter-spacing:.9px;color:var(--ink3);text-transform:uppercase;padding:14px 10px 6px}
+.nitem{display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;cursor:pointer;color:var(--ink2);transition:.12s;margin-bottom:2px}
+.nitem:hover{background:var(--surface2);color:var(--ink)}
+.nitem.active{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.nitem .ico{width:20px;text-align:center;font-size:15px;flex:0 0 auto}
+.nitem .nm{flex:1;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nitem .sc{font-size:11px;font-weight:700;padding:1px 7px;border-radius:20px;background:var(--surface2)}
+.nitem.active .sc{background:#fff}
+.nitem .sdot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.nsub{padding-left:8px;border-left:2px solid var(--line2);margin-left:14px}
+.side .foot{padding:12px;border-top:1px solid var(--line2)}
+.dlbtn{width:100%;border:none;background:var(--accent);color:#fff;padding:10px;border-radius:10px;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px}
+.dlbtn:hover{background:#2f4bc4}
+.dlbtn.ghost{background:var(--surface2);color:var(--ink2);border:1px solid var(--line);margin-top:8px}
+.main{min-width:0;display:flex;flex-direction:column}
+.topbar{background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:13px 30px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;z-index:20}
+.crumb{font-size:13px;color:var(--ink3);display:flex;align-items:center;gap:7px}
+.crumb b{color:var(--ink);font-weight:600}
+.crumb .sep{color:var(--ink3)}
+.crumb a{color:var(--accent);cursor:pointer;text-decoration:none}
+.updated{font-size:12px;color:var(--ink3)}
+.content{padding:26px 30px 60px;max-width:1220px;width:100%;margin:0 auto}
+.page-h{margin-bottom:20px}
+.page-h h2{font-size:21px;font-weight:700}
+.page-h p{font-size:13px;color:var(--ink2);margin-top:3px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.pad{padding:20px}
+.block-title{font-size:13px;font-weight:700;margin:26px 2px 12px;display:flex;align-items:center;gap:8px}
+.block-title .hint{font-size:11px;font-weight:500;color:var(--ink3)}
+.ring{position:relative;flex:0 0 auto}
+.ring .val{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring .val b{font-weight:800;line-height:1}
+.ring .val small{font-size:11px;color:var(--ink3);margin-top:3px}
+.s-pass{color:var(--pass)}.bg-pass{background:var(--pass)}.soft-pass{background:var(--pass-bg);color:var(--pass-ink)}
+.s-warn{color:var(--warn)}.bg-warn{background:var(--warn)}.soft-warn{background:var(--warn-bg);color:var(--warn-ink)}
+.s-fail{color:var(--fail)}.bg-fail{background:var(--fail)}.soft-fail{background:var(--fail-bg);color:var(--fail-ink)}
+.s-na{color:var(--na-ink)}.bg-na{background:var(--na)}.soft-na{background:var(--na-bg);color:var(--na-ink)}
+.s-info{color:var(--info)}.bg-info{background:var(--info)}.soft-info{background:var(--info-bg);color:var(--info-ink)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap}
+.badge .d{width:7px;height:7px;border-radius:50%}
+.tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
+.pf-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:8px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
+.kpi .t{font-size:12px;color:var(--ink2)}
+.kpi .n{font-size:28px;font-weight:800;margin-top:6px}
+.kpi .sub{font-size:11px;color:var(--ink3);margin-top:2px}
+.sitecards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sitecard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:18px;cursor:pointer;transition:.14s}
+.sitecard:hover{border-color:var(--accent);transform:translateY(-2px)}
+.sitecard .hd{display:flex;align-items:center;gap:14px}
+.sitecard .hd .nm b{font-size:15px;display:block}
+.sitecard .hd .nm small{font-size:12px;color:var(--ink3)}
+.sitecard .rate{margin-top:14px;display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;padding:5px 11px;border-radius:20px}
+.sitecard .mrow{display:flex;justify-content:space-between;margin-top:14px;font-size:12px}
+.sitecard .mrow .mi{text-align:center;flex:1}
+.sitecard .mrow .mi b{display:block;font-size:18px;font-weight:800}
+.sitecard .mrow .mi span{color:var(--ink3);font-size:11px}
+.sitecard .go{margin-top:14px;font-size:13px;font-weight:600;color:var(--accent);display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--line2)}
+.heatwrap{overflow-x:auto}
+table.heat-t{border-collapse:separate;border-spacing:6px;width:100%;min-width:640px}
+table.heat-t th{font-size:11px;color:var(--ink3);text-transform:uppercase;letter-spacing:.5px;padding:6px 10px;text-align:center;font-weight:700}
+table.heat-t th.rowh,table.heat-t td.rowh{text-align:left;width:230px}
+table.heat-t td.rowh{font-weight:600;font-size:13px;padding-left:6px}
+table.heat-t td.rowh small{display:block;color:var(--ink3);font-weight:400;font-size:11px}
+.hc{border-radius:11px;padding:12px 8px;text-align:center;cursor:pointer;transition:.12s;border:1.5px solid transparent}
+.hc:hover{transform:scale(1.04);box-shadow:var(--shadow)}
+.hc b{font-size:18px;font-weight:800;display:block;line-height:1}
+.hc small{font-size:10px;opacity:.9;display:block;margin-top:3px}
+.heat-legend{display:flex;gap:14px;margin-top:14px;font-size:11px;color:var(--ink2);flex-wrap:wrap;align-items:center}
+.heat-legend .sw{display:inline-flex;align-items:center;gap:6px}
+.heat-legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+.pa{display:flex;gap:13px;padding:14px 18px;border-bottom:1px solid var(--line2);align-items:flex-start}
+.pa:last-child{border-bottom:none}
+.pa .rank{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;flex:0 0 auto;margin-top:1px}
+.pa .pb{flex:1;min-width:0}
+.pa .pb .h{font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pa .pb .f{font-size:12px;color:var(--ink2);margin-top:3px}
+.pa .sitepill{font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;background:var(--accent-soft);color:var(--accent);cursor:pointer}
+.sev{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;padding:24px 26px;margin-bottom:18px}
+.hero-info .rate{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px}
+.hero-info h3{font-size:16px;margin-top:12px}
+.hero-info .desc{font-size:13px;color:var(--ink2);margin-top:5px;max-width:660px}
+.hero-info .ref{font-size:12px;color:var(--ink3);margin-top:12px;display:flex;gap:20px;flex-wrap:wrap}
+.hero-info .ref b{color:var(--ink2);font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:15px 16px;box-shadow:var(--shadow)}
+.tile .t{font-size:12px;color:var(--ink2);display:flex;align-items:center;gap:7px}
+.tile .t .d{width:9px;height:9px;border-radius:50%}
+.tile .n{font-size:26px;font-weight:800;margin-top:8px}
+.tile .p{font-size:11px;color:var(--ink3);margin-top:2px}
+.seclist{overflow:hidden}
+.secrow{display:grid;grid-template-columns:34px 1fr 180px 120px 24px;gap:16px;align-items:center;padding:15px 18px;border-bottom:1px solid var(--line2);cursor:pointer;transition:.12s}
+.secrow:last-child{border-bottom:none}
+.secrow:hover{background:var(--surface2)}
+.secrow .ic{font-size:19px;text-align:center}
+.secrow .nm b{font-size:14px;display:block}
+.secrow .nm small{font-size:12px;color:var(--ink3)}
+.mini{height:8px;border-radius:6px;background:var(--line);overflow:hidden;display:flex}
+.mini i{height:100%}
+.secrow .scwrap{display:flex;align-items:center;gap:9px;justify-content:flex-end}
+.secrow .scwrap .pct{font-size:15px;font-weight:800;min-width:44px;text-align:right}
+.chev{color:var(--ink3);text-align:center;font-size:16px}
+.issue{display:flex;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line2)}
+.issue:last-child{border-bottom:none}
+.issue .bar{width:4px;border-radius:4px;flex:0 0 4px}
+.issue .h{font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.issue .f{font-size:12px;color:var(--ink2);margin-top:3px}
+.emptyok{padding:30px;text-align:center;color:var(--ink2)}
+.emptyok .big{font-size:30px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+.metric .top{display:flex;justify-content:space-between;align-items:flex-start}
+.metric .lab{font-size:12px;color:var(--ink2)}
+.metric .v{font-size:28px;font-weight:800;margin-top:8px}
+.metric .v small{font-size:14px;font-weight:600;color:var(--ink3)}
+.metric .gaugebar{height:6px;border-radius:6px;background:linear-gradient(90deg,var(--pass),var(--warn) 60%,var(--fail));margin-top:14px;position:relative;opacity:.85}
+.metric .gaugebar i{position:absolute;top:-4px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.metric .thresh{display:flex;justify-content:space-between;font-size:10px;color:var(--ink3);margin-top:8px}
+.metric .rlab{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px}
+.checklist{display:flex;flex-direction:column}
+.chk{display:flex;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line2)}
+.chk:last-child{border-bottom:none}
+.chk .ci{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;flex:0 0 auto;margin-top:1px}
+.chk .cb{flex:1;min-width:0}
+.chk .cb b{font-size:13px;font-weight:600}
+.chk .cb p{font-size:12px;color:var(--ink2);margin-top:2px}
+.grouphd{display:flex;align-items:center;gap:9px;padding:13px 16px;border-bottom:1px solid var(--line2);background:var(--surface2);border-radius:var(--r) var(--r) 0 0}
+.grouphd .gi{font-size:16px}
+.grouphd b{font-size:13px}
+.grouphd .gsc{margin-left:auto;font-size:12px;font-weight:800}
+.kv{display:flex;flex-direction:column}
+.kvrow{display:grid;grid-template-columns:190px 1fr;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line2);align-items:center}
+.kvrow:last-child{border-bottom:none}
+.kvrow .k{font-size:12px;color:var(--ink3);font-weight:600}
+.kvrow .v{font-size:13px;font-weight:600}
+.timeline{display:flex;align-items:flex-start;padding:24px 24px 20px;gap:0}
+.tstep{flex:1;text-align:center;position:relative}
+.tstep .dot{width:16px;height:16px;border-radius:50%;margin:0 auto 12px;border:3px solid #fff;position:relative;z-index:2}
+.tstep .tl{font-size:11px;color:var(--ink3);text-transform:uppercase;letter-spacing:.5px}
+.tstep .td{font-size:14px;font-weight:700;margin-top:3px}
+.tstep::before{content:"";position:absolute;top:6px;left:-50%;width:100%;height:3px;background:var(--line);z-index:1}
+.tstep:first-child::before{display:none}
+.shield{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--shadow);text-align:center}
+.shield .ic{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;font-size:20px;margin:0 auto 10px}
+.shield b{font-size:13px;display:block}
+.shield .st{margin-top:10px;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;display:inline-block}
+.shield p{font-size:11px;color:var(--ink2);margin-top:10px;line-height:1.4}
+.callout{display:flex;gap:18px;align-items:center;padding:22px 26px}
+.callout .big{width:70px;height:70px;border-radius:16px;display:grid;place-items:center;font-size:34px;flex:0 0 auto}
+.callout h3{font-size:18px}
+.callout p{font-size:13px;color:var(--ink2);margin-top:4px}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:26px 0 12px}
+.srch{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 13px;font-size:13px;min-width:250px;color:var(--ink);outline:none}
+.srch:focus{border-color:var(--accent)}
+table.det{width:100%;border-collapse:collapse}
+table.det th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink3);padding:12px 18px;border-bottom:1px solid var(--line);background:var(--surface2)}
+table.det td{padding:13px 18px;border-bottom:1px solid var(--line2);vertical-align:top}
+table.det tr:last-child td{border-bottom:none}
+table.det tr:hover td{background:var(--surface2)}
+.pnum{color:var(--ink3);font-weight:700}
+.pname{font-weight:600}
+.finding{color:var(--ink2);font-size:13px}
+.empty{padding:34px;text-align:center;color:var(--ink3)}
+.menu-btn{display:none;border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:8px 11px;font-size:16px}
+@media(max-width:820px){.app{grid-template-columns:1fr}.side{position:fixed;left:-290px;z-index:100;transition:left .2s;box-shadow:0 0 40px rgba(0,0,0,.2)}.side.open{left:0}.menu-btn{display:inline-flex}.hero{grid-template-columns:1fr;justify-items:center;text-align:center}}
+@media print{.side,.topbar .right,.menu-btn,.toolbar{display:none}.app{grid-template-columns:1fr}body{background:#fff}.card{box-shadow:none}}
 </style>
 </head>
 <body>
-<div id="app">Loading latest audit results...</div>
-
+<div class="app">
+  <aside class="side" id="side">
+    <div class="top"><div class="logo"><div class="mark">ITC</div><div><h1>Compliance Console</h1><p>Website Governance Audit</p></div></div></div>
+    <div class="navscroll" id="navscroll"></div>
+    <div class="foot">
+      <button class="dlbtn" onclick="downloadCSV()">⬇ Download report (CSV)</button>
+      <button class="dlbtn ghost" onclick="window.print()">🖨 Print / Save as PDF</button>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px">
+        <button class="menu-btn" onclick="document.getElementById('side').classList.toggle('open')">☰</button>
+        <div class="crumb" id="crumb"></div>
+      </div>
+      <div class="right"><span class="updated" id="updated"></span></div>
+    </div>
+    <div class="content" id="content"></div>
+  </div>
+</div>
 <script>
-let AUDIT_DATA = {};
+const CATEGORIES = [
+  { id:"A", key:"domain",    name:"Domain Information",     icon:"🌐", range:"1–10",  desc:"Registration, WHOIS, ownership & audit integrity" },
+  { id:"B", key:"uiux",      name:"UI/UX & Performance",    icon:"⚡", range:"11–24", desc:"Core Web Vitals, link health & interface usability" },
+  { id:"C", key:"content",   name:"Content & Brand",        icon:"📝", range:"25–45", desc:"Accuracy, legal approvals, branding, safety & consent" },
+  { id:"D", key:"metrology", name:"Legal Metrology (D2C)",  icon:"⚖️", range:"46",    desc:"Mandatory product disclosures for D2C commerce" },
+  { id:"E", key:"apps",      name:"Mobile Apps",            icon:"📱", range:"47–49", desc:"Associated apps & target demographics" },
+  { id:"F", key:"policies",  name:"Policies & Governance",  icon:"📜", range:"50–53", desc:"Privacy, terms, grievance & copyright freshness" },
+  { id:"G", key:"security",  name:"Security & DNS",         icon:"🔒", range:"54–59", desc:"SSL, CAA, CSP, DNSSEC, DANE & upload security" }
+];
+const PARAMS = [
+  {id:1,cat:"A",name:"Full URL"},{id:2,cat:"A",name:"Domain Registrant Name"},{id:3,cat:"A",name:"Registrant Contact Email"},
+  {id:4,cat:"A",name:"Domain Creation Date"},{id:5,cat:"A",name:"Domain Update Date"},{id:6,cat:"A",name:"Domain Expiration Date"},
+  {id:7,cat:"A",name:"Designated Content Manager"},{id:8,cat:"A",name:"Area of Operation (Div/SBU)"},{id:9,cat:"A",name:"Registrar Name"},
+  {id:10,cat:"A",name:"Total Checks Integrity (59)"},
+  {id:11,cat:"B",name:"Speed Index Time"},{id:12,cat:"B",name:"Functional Social Media Handles"},{id:13,cat:"B",name:"Removal of Old / Orphaned Pages"},
+  {id:14,cat:"B",name:"Broken Links / Images"},{id:15,cat:"B",name:"Form Functionality"},{id:16,cat:"B",name:"Third-Party Link Disclaimers"},
+  {id:17,cat:"B",name:"Removal of Outdated 3rd-Party Links"},{id:18,cat:"B",name:"Direct Link to itcportal.com"},{id:19,cat:"B",name:"Feedback System Status"},
+  {id:20,cat:"B",name:"E-Commerce / Transaction Platform"},{id:21,cat:"B",name:"Mobile Responsiveness"},{id:22,cat:"B",name:"Website Interactive Time (TTI)"},
+  {id:23,cat:"B",name:"Largest Contentful Paint (LCP)"},{id:24,cat:"B",name:"Total Blocking Time (TBT)"},
+  {id:25,cat:"C",name:"Product Information Accuracy"},{id:26,cat:"C",name:"Website Purpose Definition"},{id:27,cat:"C",name:"Third-Party Links Curation"},
+  {id:28,cat:"C",name:"Legal Disclaimer Approval Status"},{id:29,cat:"C",name:"Statutory / Regulatory Compliance"},{id:30,cat:"C",name:"Consumer Care Email / Helpline"},
+  {id:31,cat:"C",name:"Mandatory Redirection Disclaimer Popup"},{id:32,cat:"C",name:"Content Consistency with ITC Portal"},{id:33,cat:"C",name:"Presence of Objectionable Content"},
+  {id:34,cat:"C",name:"Derogatory Remarks"},{id:35,cat:"C",name:"Unauthorized Endorsements"},{id:36,cat:"C",name:"Unverified Claims"},
+  {id:37,cat:"C",name:"Usage of Latest Official ITC Logo"},{id:38,cat:"C",name:"Compliance of Celebrity Imagery"},{id:39,cat:"C",name:"Accidental Internal Info Posting"},
+  {id:40,cat:"C",name:"Information Freshness"},{id:41,cat:"C",name:"Rendering of Audio / Video Assets"},{id:42,cat:"C",name:"On-Site Search Functionality"},
+  {id:43,cat:"C",name:"Cross-Divisional Content Segregation"},{id:44,cat:"C",name:"User Consent Mechanisms"},{id:45,cat:"C",name:"Validation of Promotional Offers"},
+  {id:46,cat:"D",name:"Legal Metrology Declarations"},
+  {id:47,cat:"E",name:"Active Mobile Apps for SBU"},{id:48,cat:"E",name:"Official Name of the App"},{id:49,cat:"E",name:"Target Audience Demographic"},
+  {id:50,cat:"F",name:"Terms of Use & Privacy Policy"},{id:51,cat:"F",name:"Credits / Source Acknowledgments"},{id:52,cat:"F",name:"Grievance Officer in Privacy Policy"},
+  {id:53,cat:"F",name:"Copyright Year / T&C Freshness"},
+  {id:54,cat:"G",name:"SSL Security Header Details"},{id:55,cat:"G",name:"CAA Implementation"},{id:56,cat:"G",name:"Content Security Policy (CSP)"},
+  {id:57,cat:"G",name:"DNSSEC Validation Status"},{id:58,cat:"G",name:"DANE / TLSA Record Status"},{id:59,cat:"G",name:"Document Upload Security"}
+];
+const LM_DISCLOSURES = ["Name & address of Manufacturer / Packer / Importer","Country of Origin","Common / Generic Name of Commodity","Net Quantity (weight / measure / number)","Month & Year of Manufacture / Best-Before","Retail Sale Price (MRP, inclusive of taxes)","Dimensions / Size of the Commodity"];
+const CONTENT_GROUPS = [
+  {title:"Accuracy & Purpose",icon:"🎯",ids:[25,26,32,40]},
+  {title:"Third-Party & Redirection",icon:"🔗",ids:[27,31]},
+  {title:"Legal & Statutory",icon:"⚖️",ids:[28,29,30,45]},
+  {title:"Brand Integrity",icon:"™️",ids:[37,38]},
+  {title:"Content Safety",icon:"🛡️",ids:[33,34,35,36,39]},
+  {title:"Functionality & Consent",icon:"⚙️",ids:[41,42,43,44]}
+];
+const PERF_T = {speed:[3.4,5.8],tti:[3.8,7.3],lcp:[2.5,4.0],tbt:[200,600]};
+const SLABEL={pass:"Compliant",warn:"Needs Attention",fail:"Non-Compliant",na:"Not Applicable",info:"Informational"};
+
+let SITES = {};
+let SITE_ORDER = [];
+let VIEW="portfolio", SITE=null, CAT=null, QUERY="";
 
 fetch('./audit_results.json')
   .then(res => res.json())
   .then(data => {
-    AUDIT_DATA = data;
-    showOverview();
+    SITES = data;
+    SITE_ORDER = Object.keys(data);
+    render();
   })
   .catch(err => {
-    document.getElementById('app').innerHTML = `
-      <h2>No audit results found yet!</h2>
-      <p style="margin-top:8px">Please trigger your first scan in GitHub via the <b>Actions</b> tab.</p>
-    `;
+    document.getElementById('content').innerHTML = `
+      <div class="card pad" style="text-align:center">
+        <h2>Weekly Audit Results Initializing...</h2>
+        <p style="margin-top:8px;color:var(--ink2)">Please run your GitHub Action workflow or wait for the initial weekly run to complete.</p>
+      </div>`;
   });
 
-function showOverview() {
-  const keys = Object.keys(AUDIT_DATA);
-  let html = `<div class="header"><h1>ITC Foods Portfolio Compliance</h1><p>Automated weekly governance report (${keys.length} Properties)</p></div><div class="grid">`;
-  
-  keys.forEach(k => {
-    const site = AUDIT_DATA[k];
-    const passCount = site.checks.filter(c => c.s === 'pass').length;
-    const score = Math.round((passCount / site.checks.length) * 100);
-    html += `
-      <div class="card" onclick="showDetail('${k}')">
-        <h3>${site.name}</h3>
-        <p>${site.domain}</p>
-        <div>Score: <b>${score}%</b> (${passCount}/${site.checks.length} Checks passed)</div>
-      </div>
-    `;
-  });
-  html += `</div>`;
-  document.getElementById('app').innerHTML = html;
+function counts(site,catId){const f=SITES[site].f,c={pass:0,warn:0,fail:0,na:0,info:0};PARAMS.filter(p=>!catId||p.cat===catId).forEach(p=>c[f[p.id].s]++);return c;}
+function score(c){const d=c.pass+c.warn+c.fail;return d?Math.round(c.pass/d*100):100;}
+function rating(s){return s>=90?["Highly Compliant","pass"]:s>=75?["Compliant","pass"]:s>=55?["Partially Compliant","warn"]:["Action Required","fail"];}
+function openIssues(site){return PARAMS.filter(p=>["fail","warn"].includes(SITES[site].f[p.id].s));}
+function metricRate(key,v){if(v==null)return"na";const t=PERF_T[key];return v<=t[0]?"pass":v<=t[1]?"warn":"fail";}
+function ring(c,size){const tot=c.pass+c.warn+c.fail+c.na+c.info||1,R=54,C=2*Math.PI*R,sw=13;let off=0,arcs="";
+  [["pass",c.pass],["warn",c.warn],["fail",c.fail],["na",c.na],["info",c.info]].forEach(([k,v])=>{if(!v)return;const len=C*v/tot;arcs+=`<circle r="${R}" cx="66" cy="66" fill="none" stroke="var(--${k})" stroke-width="${sw}" stroke-linecap="round" stroke-dasharray="${Math.max(len-2,0)} ${C-Math.max(len-2,0)}" stroke-dashoffset="${-off}" transform="rotate(-90 66 66)"/>`;off+=len;});
+  return `<svg width="${size}" height="${size}" viewBox="0 0 132 132"><circle r="${R}" cx="66" cy="66" fill="none" stroke="var(--line)" stroke-width="${sw}"/>${arcs}</svg>`;}
+function miniBar(c){const tot=c.pass+c.warn+c.fail+c.na+c.info||1;return ["pass","warn","fail","na","info"].map(k=>c[k]?`<i class="bg-${k}" style="width:${c[k]/tot*100}%"></i>`:"").join("");}
+function statusBadge(st){return `<span class="badge soft-${st}"><span class="d bg-${st}"></span>${SLABEL[st]}</span>`;}
+
+function renderSide(){
+  const el=document.getElementById("navscroll");let h="";
+  h+=`<div class="nitem ${VIEW==='portfolio'?'active':''}" onclick="goPortfolio()"><span class="ico">📂</span><span class="nm">Portfolio Overview</span></div>`;
+  h+=`<div class="grp">Websites (${SITE_ORDER.length})</div>`;
+  SITE_ORDER.forEach(k=>{const sc=score(counts(k)),rt=rating(sc);h+=`<div class="nitem ${(VIEW!=='portfolio'&&SITE===k)?'active':''}" onclick="goSite('${k}')"><span class="sdot bg-${rt[1]}"></span><span class="nm">${SITES[k].name}</span><span class="sc">${sc}%</span></div>`;});
+  if(SITE&&VIEW!=='portfolio'){
+    h+=`<div class="grp">Sections · ${SITES[SITE].name}</div><div class="nsub">`;
+    h+=`<div class="nitem ${VIEW==='site'?'active':''}" onclick="goSite('${SITE}')"><span class="ico">📊</span><span class="nm">Overview</span></div>`;
+    CATEGORIES.forEach(cat=>{const sc=score(counts(SITE,cat.id));h+=`<div class="nitem ${(VIEW==='section'&&CAT===cat.id)?'active':''}" onclick="goSection('${cat.id}')"><span class="ico">${cat.icon}</span><span class="nm">${cat.name}</span><span class="sc">${sc}%</span></div>`;});
+    h+=`</div>`;
+  }
+  el.innerHTML=h;
+}
+function goPortfolio(){VIEW="portfolio";SITE=null;render();}
+function goSite(k){VIEW="site";SITE=k;render();}
+function goSection(id){VIEW="section";CAT=id;QUERY="";render();}
+function drillFromHeat(k,id){SITE=k;VIEW="section";CAT=id;QUERY="";render();}
+function render(){
+  renderSide();document.getElementById("side").classList.remove("open");
+  const cr=document.getElementById("crumb");
+  if(VIEW==="portfolio"){cr.innerHTML=`<b>Portfolio</b>`;document.getElementById("updated").textContent=`${SITE_ORDER.length} websites · Weekly Automated Audit`;renderPortfolio();}
+  else{document.getElementById("updated").textContent="Audited "+SITES[SITE].auditDate;
+    if(VIEW==="site"){cr.innerHTML=`<a onclick="goPortfolio()">Portfolio</a><span class="sep">›</span><b>${SITES[SITE].name}</b>`;renderSite();}
+    else{const cat=CATEGORIES.find(c=>c.id===CAT);cr.innerHTML=`<a onclick="goPortfolio()">Portfolio</a><span class="sep">›</span><a onclick="goSite('${SITE}')">${SITES[SITE].name}</a><span class="sep">›</span><b>${cat.name}</b>`;renderSection();}}
+  window.scrollTo(0,0);
 }
 
-function showDetail(key) {
-  const site = AUDIT_DATA[key];
-  let rows = site.checks.map(c => `
-    <tr>
-      <td><b>${c.cat}</b></td>
-      <td>${c.name}</td>
-      <td><span class="badge ${c.s}">${c.s.toUpperCase()}</span></td>
-      <td>${c.f}</td>
-    </tr>
-  `).join('');
+function renderPortfolio(){
+  let totP=0,totW=0,totF=0,scoreSum=0;
+  SITE_ORDER.forEach(k=>{const c=counts(k);totP+=c.pass;totW+=c.warn;totF+=c.fail;scoreSum+=score(c);});
+  const avg=Math.round(scoreSum/(SITE_ORDER.length||1));
+  const kpis=`<div class="pf-kpis">
+    <div class="kpi"><div class="t">Websites audited</div><div class="n">${SITE_ORDER.length}</div><div class="sub">59-parameter framework each</div></div>
+    <div class="kpi"><div class="t">Average compliance</div><div class="n s-${avg>=75?'pass':avg>=55?'warn':'fail'}">${avg}%</div><div class="sub">across portfolio</div></div>
+    <div class="kpi"><div class="t">Critical non-compliances</div><div class="n s-fail">${totF}</div><div class="sub">require remediation</div></div>
+    <div class="kpi"><div class="t">Items to review</div><div class="n s-warn">${totW}</div><div class="sub">pending verification</div></div>
+  </div>`;
+  const cards=SITE_ORDER.map(k=>{const s=SITES[k],c=counts(k),sc=score(c),rt=rating(sc),iss=c.warn+c.fail;
+    return `<div class="sitecard" onclick="goSite('${k}')"><div class="hd"><div class="ring" style="width:64px;height:64px">${ring(c,64)}<div class="val"><b class="s-${rt[1]}" style="font-size:16px">${sc}%</b></div></div><div class="nm"><b>${s.name}</b><small>${s.domain}</small></div></div>
+      <span class="rate soft-${rt[1]}">● ${rt[0]}</span>
+      <div class="mrow"><div class="mi"><b class="s-pass">${c.pass}</b><span>Compliant</span></div><div class="mi"><b class="s-warn">${c.warn}</b><span>Attention</span></div><div class="mi"><b class="s-fail">${c.fail}</b><span>Failing</span></div></div>
+      <div class="go"><span>${iss} open issue${iss!==1?'s':''}</span><span>View audit →</span></div></div>`;}).join("");
 
-  document.getElementById('app').innerHTML = `
-    <div class="back-btn" onclick="showOverview()">← Back to Overview</div>
-    <div class="header">
-      <h1>${site.name} Detailed Audit</h1>
-      <p>${site.domain} · Audited on ${site.auditDate}</p>
-    </div>
-    <table>
-      <thead><tr><th>Category</th><th>Checkpoint</th><th>Status</th><th>Observation</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
-  `;
+  let heat=`<div class="heatwrap"><table class="heat-t"><thead><tr><th class="rowh">Section</th>`;
+  SITE_ORDER.forEach(k=>heat+=`<th>${SITES[k].name}</th>`);heat+=`</tr></thead><tbody>`;
+  CATEGORIES.forEach(cat=>{heat+=`<tr><td class="rowh">${cat.icon} ${cat.name}<small>Params ${cat.range}</small></td>`;
+    SITE_ORDER.forEach(k=>{const cc=counts(k,cat.id),csc=score(cc),rt=rating(csc);
+      heat+=`<td><div class="hc soft-${rt[1]}" onclick="drillFromHeat('${k}','${cat.id}')"><b>${csc}%</b><small>${cc.pass}✓ ${cc.fail?cc.fail+'✕ ':''}${cc.warn?cc.warn+'! ':''}${cc.na?cc.na+'∅':''}</small></div></td>`;});
+    heat+=`</tr>`;});
+  heat+=`</tbody></table></div>
+    <div class="heat-legend"><span class="sw"><i class="soft-pass" style="background:var(--pass-bg)"></i>Compliant ≥75%</span><span class="sw"><i class="soft-warn" style="background:var(--warn-bg)"></i>Partial 55–74%</span><span class="sw"><i class="soft-fail" style="background:var(--fail-bg)"></i>Action req. &lt;55%</span><span style="margin-left:auto;color:var(--ink3)">✓ pass · ✕ fail · ! review · ∅ n/a</span></div>`;
+
+  const allFails=[];
+  SITE_ORDER.forEach(k=>{PARAMS.forEach(p=>{if(SITES[k].f[p.id].s==="fail")allFails.push({k,p,f:SITES[k].f[p.id].f});});});
+  const pa=allFails.length?allFails.map((it,i)=>{const cat=CATEGORIES.find(c=>c.id===it.p.cat);
+    return `<div class="pa"><div class="rank bg-fail">${i+1}</div><div class="pb"><div class="h">${it.p.name}
+      <span class="sitepill" onclick="event.stopPropagation();drillFromHeat('${it.k}','${it.p.cat}')">${SITES[it.k].name}</span>
+      <span class="sev soft-na">${cat.icon} ${cat.name}</span></div><div class="f">${it.f}</div></div></div>`;}).join("")
+    :`<div class="emptyok"><div class="big">✅</div><b>No critical non-compliances across the portfolio</b></div>`;
+
+  document.getElementById("content").innerHTML=`
+    <div class="page-h"><h2>Portfolio Compliance Overview</h2><p>Consolidated view across all 23 audited ITC web properties · 59-parameter governance framework</p></div>
+    ${kpis}
+    <div class="block-title">Websites <span class="hint">— click a card to open its detailed audit</span></div>
+    <div class="sitecards">${cards}</div>
+    <div class="block-title">Section compliance heatmap <span class="hint">— sections × websites · click any cell to drill in</span></div>
+    <div class="card pad">${heat}</div>
+    <div class="block-title">Priority actions across portfolio <span class="hint">— every critical non-compliance, ranked</span></div>
+    <div class="card">${pa}</div>`;
 }
+
+function renderSite(){
+  const s=SITES[SITE],c=counts(SITE),sc=score(c),rt=rating(sc),scored=c.pass+c.warn+c.fail;
+  const td=[["pass","Compliant",c.pass],["warn","Needs Attention",c.warn],["fail","Non-Compliant",c.fail],["na","Not Applicable",c.na],["info","Informational",c.info]];
+  const tiles=td.map(([k,l,n])=>`<div class="tile"><div class="t"><span class="d bg-${k}"></span>${l}</div><div class="n s-${k}">${n}</div><div class="p">${Math.round(n/59*100)}% of 59</div></div>`).join("");
+  const secRows=CATEGORIES.map(cat=>{const cc=counts(SITE,cat.id),csc=score(cc),crt=rating(csc),open=cc.fail+cc.warn;
+    return `<div class="secrow" onclick="goSection('${cat.id}')"><div class="ic">${cat.icon}</div><div class="nm"><b>${cat.name}</b><small>Params ${cat.range} · ${cat.desc}</small></div><div class="mini">${miniBar(cc)}</div><div class="scwrap">${open?`<span class="tag soft-${cc.fail?'fail':'warn'}">${open} open</span>`:`<span class="tag soft-pass">Clear</span>`}<span class="pct s-${crt[1]}">${csc}%</span></div><div class="chev">›</div></div>`;}).join("");
+  const issues=openIssues(SITE).sort((a,b)=>(s.f[a.id].s==="fail"?0:1)-(s.f[b.id].s==="fail"?0:1));
+  const issueHtml=issues.length?issues.map(p=>{const st=s.f[p.id].s,cat=CATEGORIES.find(c=>c.id===p.cat);return `<div class="issue"><div class="bar bg-${st}"></div><div><div class="h">#${p.id} ${p.name}<span class="sev soft-${st}">${st==="fail"?"High":"Medium"}</span><span class="sev soft-na" onclick="goSection('${cat.id}')" style="cursor:pointer">${cat.name}</span></div><div class="f">${s.f[p.id].f}</div></div></div>`;}).join(""):`<div class="emptyok"><div class="big">✅</div><b>No open issues</b><br><span style="font-size:12px;color:var(--ink3)">All scored parameters compliant.</span></div>`;
+  document.getElementById("content").innerHTML=`
+    <div class="page-h"><h2>${s.name} — Compliance Overview</h2><p>${s.domain} · ${s.division}</p></div>
+    <div class="card hero"><div class="ring" style="width:132px;height:132px">${ring(c,132)}<div class="val"><b class="s-${rt[1]}" style="font-size:30px">${sc}%</b><small>overall</small></div></div>
+      <div class="hero-info"><span class="rate soft-${rt[1]}">● ${rt[0]}</span><h3>${c.pass} of ${scored} scored parameters compliant</h3><div class="desc">${s.headline}</div>
+        <div class="ref"><span><b>Framework:</b> 59 params · 7 sections</span><span><b>Audited:</b> ${s.auditDate}</span><span><b>Ref:</b> ${s.ref}</span></div></div></div>
+    <div class="tiles">${tiles}</div>
+    <div class="block-title">Compliance by section <span class="hint">— click a row to open its purpose-built view</span></div>
+    <div class="card seclist">${secRows}</div>
+    <div class="block-title">Open issues register <span class="hint">— failing &amp; review items, most severe first</span></div>
+    <div class="card">${issueHtml}</div>`;
+}
+
+function param(id){return{p:PARAMS.find(x=>x.id===id),d:SITES[SITE].f[id]};}
+function checkItem(id){const{p,d}=param(id);const ic={pass:"✓",warn:"!",fail:"✕",na:"–",info:"i"}[d.s];return `<div class="chk"><div class="ci bg-${d.s}">${ic}</div><div class="cb"><b>${p.name}</b><p>${d.f}</p></div></div>`;}
+function sectionHeader(cat,cc){const csc=score(cc),rt=rating(csc);return `<div class="card hero" style="padding:20px 24px;margin-bottom:18px"><div class="ring" style="width:104px;height:104px">${ring(cc,104)}<div class="val"><b class="s-${rt[1]}" style="font-size:24px">${csc}%</b></div></div><div class="hero-info"><span class="rate soft-${rt[1]}">● ${rt[0]}</span><h3>${cc.pass} of ${cc.pass+cc.warn+cc.fail} scored parameters compliant</h3><div class="desc">${cat.desc}.</div></div></div>`;}
+function detailTable(catId){const s=SITES[SITE],q=QUERY.toLowerCase();const rows=PARAMS.filter(p=>p.cat===catId).filter(p=>!q||p.name.toLowerCase().includes(q)||s.f[p.id].f.toLowerCase().includes(q));
+  const body=rows.length?rows.map(p=>`<tr><td class="pnum">${p.id}</td><td class="pname">${p.name}</td><td>${statusBadge(s.f[p.id].s)}</td><td class="finding">${s.f[p.id].f}</td></tr>`).join(""):`<tr><td colspan="4" class="empty">No parameters match.</td></tr>`;
+  return `<div class="toolbar"><div class="block-title" style="margin:0">All parameter details <span class="hint">(${rows.length})</span></div><input class="srch" id="srch" placeholder="🔍 Filter parameters…" value="${QUERY}" oninput="QUERY=this.value;document.getElementById('tbody').innerHTML=detailRows('${catId}')"></div><div class="card"><table class="det"><thead><tr><th style="width:44px">#</th><th style="width:26%">Parameter</th><th style="width:150px">Status</th><th>Finding / Observation</th></tr></thead><tbody id="tbody">${body}</tbody></table></div>`;}
+function detailRows(catId){const s=SITES[SITE],q=QUERY.toLowerCase();const rows=PARAMS.filter(p=>p.cat===catId).filter(p=>!q||p.name.toLowerCase().includes(q)||s.f[p.id].f.toLowerCase().includes(q));return rows.length?rows.map(p=>`<tr><td class="pnum">${p.id}</td><td class="pname">${p.name}</td><td>${statusBadge(s.f[p.id].s)}</td><td class="finding">${s.f[p.id].f}</td></tr>`).join(""):`<tr><td colspan="4" class="empty">No parameters match.</td></tr>`;}
+
+function renderSection(){
+  const cat=CATEGORIES.find(c=>c.id===CAT),cc=counts(SITE,CAT),s=SITES[SITE];let meaningful="";
+  if(CAT==="A")meaningful=viewDomain(s);else if(CAT==="B")meaningful=viewPerf(s);else if(CAT==="C")meaningful=viewContent(s);
+  else if(CAT==="D")meaningful=viewMetrology(s);else if(CAT==="E")meaningful=viewApps(s);else if(CAT==="F")meaningful=viewPolicies(s);else if(CAT==="G")meaningful=viewSecurity(s);
+  document.getElementById("content").innerHTML=`<div class="page-h"><h2>${cat.icon} ${cat.name}</h2><p>${s.name} · Parameters ${cat.range}</p></div>${sectionHeader(cat,cc)}${meaningful}${detailTable(CAT)}`;
+}
+function viewDomain(s){const di=s.domainInfo;
+  const timeline=`<div class="card timeline"><div class="tstep"><div class="dot bg-pass"></div><div class="tl">Created</div><div class="td">${di.created}</div></div><div class="tstep"><div class="dot bg-info"></div><div class="tl">Last Updated</div><div class="td">${di.updated}</div></div><div class="tstep"><div class="dot bg-warn"></div><div class="tl">Expires</div><div class="td">${di.expires}</div></div></div>`;
+  const kv=[["Registrant",di.registrant,param(2).d.s],["Contact Email",di.email,param(3).d.s],["Registrar",di.registrar,param(9).d.s],["Content Manager",di.manager,param(7).d.s],["Area of Operation",di.area,param(8).d.s],["Full URL",param(1).d.f,"info"],["Checks Integrity",param(10).d.f,param(10).d.s]];
+  const whois=`<div class="card kv">${kv.map(([k,v,st])=>`<div class="kvrow"><div class="k">${k}</div><div class="v s-${st==='info'?'na':st}">${v}</div></div>`).join("")}</div>`;
+  return `<div class="block-title">Registration lifecycle</div>${timeline}<div class="block-title">WHOIS &amp; ownership record</div>${whois}`;
+}
+function viewPerf(s){
+  const cards=s.metrics.map(m=>{const rt=metricRate(m.key,m.v);const t=PERF_T[m.key];const rl={pass:"Good",warn:"Needs work",fail:"Poor",na:"Pending"}[rt];const pos=m.v==null?50:Math.min(96,Math.max(4,m.v/(t[1]*1.4)*100));
+    return `<div class="metric"><div class="top"><div class="lab">${m.label}</div><span class="rlab soft-${rt}">${rl}</span></div><div class="v s-${rt}">${m.v==null?'—':m.v}<small> ${m.unit}</small></div><div class="gaugebar"><i style="left:calc(${pos}% - 7px)"></i></div><div class="thresh"><span>Fast</span><span>Good ≤${t[0]}${m.unit}</span><span>Slow</span></div></div>`;}).join("");
+  const funcIds=[21,12,14,13,15,19,16,17,18,20];
+  return `<div class="block-title">Core Web Vitals <span class="hint">— measured against Google Lighthouse thresholds</span></div><div class="grid4">${cards}</div><div class="block-title">Functional &amp; usability checks</div><div class="card checklist">${funcIds.map(id=>checkItem(id)).join("")}</div>`;
+}
+function viewContent(s){const groups=CONTENT_GROUPS.map(g=>{const cc={pass:0,warn:0,fail:0,na:0,info:0};g.ids.forEach(id=>cc[s.f[id].s]++);const gsc=score(cc),rt=rating(gsc);
+  return `<div class="card"><div class="grouphd"><span class="gi">${g.icon}</span><b>${g.title}</b><span class="gsc s-${rt[1]}">${gsc}%</span></div><div class="checklist">${g.ids.map(id=>checkItem(id)).join("")}</div></div>`;}).join("");
+  return `<div class="block-title">Content &amp; brand compliance <span class="hint">— grouped by theme</span></div><div class="grid2">${groups}</div>`;}
+function viewMetrology(s){const st=s.disclosures;const map={pass:["✅","var(--pass-bg)","All 7 mandatory declarations present","Product & D2C layers fully compliant with Legal Metrology (Packaged Commodities) Rules."],fail:["⛔","var(--fail-bg)","All 7 mandatory declarations missing","Non-compliant with Legal Metrology (Packaged Commodities) Rules — remediation required before D2C sale."],na:["➖","var(--na-bg)","Not applicable","Non-transactional corporate domain — no packaged-commodity declarations required."]};const m=map[st];
+  const list=LM_DISCLOSURES.map(d=>{const ic=st==="pass"?"✓":st==="fail"?"✕":"–";return `<div class="chk"><div class="ci bg-${st}">${ic}</div><div class="cb"><b>${d}</b></div></div>`;}).join("");
+  return `<div class="card callout"><div class="big" style="background:${m[1]}">${m[0]}</div><div><h3 class="s-${st}">${m[2]}</h3><p>${m[3]}</p></div></div><div class="block-title">The 7 mandatory disclosures</div><div class="card checklist">${list}</div>`;}
+function viewApps(s){if(!s.apps.length)return `<div class="card callout"><div class="big" style="background:var(--na-bg)">📱</div><div><h3 class="s-na">No associated mobile app</h3><p>${param(47).d.f}</p></div></div>`;
+  const cards=s.apps.map(a=>`<div class="appcard"><div class="ic">📱</div><b>${a.name}</b><div class="aud">👥 ${a.aud}</div><span class="note soft-${a.st}">${a.note}</span></div>`).join("");
+  return `<div class="block-title">Associated apps &amp; target demographics</div><div class="grid3">${cards}</div>`;}
+function viewPolicies(s){const items=[[50,"📄","Terms of Use & Privacy Policy"],[52,"🧑‍⚖️","Grievance Officer Listed"],[51,"©️","Credits / Source Acknowledgment"],[53,"🗓️","Copyright Year & T&C Freshness"]];
+  const cards=items.map(([id,ic,title])=>{const d=s.f[id];const stl={pass:"Compliant",warn:"Verify",fail:"Missing",na:"N/A",info:"Info"}[d.s];return `<div class="shield"><div class="ic soft-${d.s}">${ic}</div><b>${title}</b><div class="st soft-${d.s}">${stl}</div><p>${d.f}</p></div>`;}).join("");
+  return `<div class="block-title">Governance &amp; policy posture</div><div class="grid4">${cards}</div>`;}
+function viewSecurity(s){const items=[[54,"🔐","SSL / TLS"],[55,"📜","CAA Records"],[56,"🛡️","Content Security Policy"],[57,"🔗","DNSSEC"],[58,"🧬","DANE / TLSA"],[59,"📤","Upload Security"]];
+  const cards=items.map(([id,ic,title])=>{const d=s.f[id];const stl={pass:"Secure",warn:"Harden",fail:"At Risk",na:"N/A",info:"Info"}[d.s];return `<div class="shield"><div class="ic soft-${d.s}">${ic}</div><b>${title}</b><div class="st soft-${d.s}">${stl}</div><p>${d.f}</p></div>`;}).join("");
+  const cc=counts(SITE,"G");const note=cc.fail?`<div class="card callout" style="margin-bottom:18px"><div class="big" style="background:var(--fail-bg)">⚠️</div><div><h3 class="s-fail">${cc.fail} control${cc.fail>1?'s':''} at risk</h3><p>Immediate DNS/security hardening recommended to close exposure.</p></div></div>`:(cc.warn?`<div class="card callout" style="margin-bottom:18px"><div class="big" style="background:var(--warn-bg)">🔧</div><div><h3 class="s-warn">${cc.warn} control${cc.warn>1?'s':''} to harden</h3><p>Baseline is secure; refine remaining headers for defense-in-depth.</p></div></div>`:`<div class="card callout" style="margin-bottom:18px"><div class="big" style="background:var(--pass-bg)">🛡️</div><div><h3 class="s-pass">Fully hardened</h3><p>All six security &amp; DNS controls implemented.</p></div></div>`);
+  return `${note}<div class="block-title">Security &amp; DNS scorecard</div><div class="grid3">${cards}</div>`;}
+
+function downloadCSV(){const rows=SITE?[SITE]:SITE_ORDER;let csv="ITC Website Compliance Audit\n\n";
+  rows.forEach(k=>{const s=SITES[k],c=counts(k),sc=score(c);csv+=`Website,${s.name}\nDomain,${s.domain}\nDivision,${s.division}\nAudit Date,${s.auditDate}\nReference,${s.ref}\nOverall,${sc}%\nCompliant,${c.pass}\nAttention,${c.warn}\nNon-Compliant,${c.fail}\nN/A,${c.na}\nInfo,${c.info}\nID,Section,Parameter,Status,Finding\n`;PARAMS.forEach(p=>{const cat=CATEGORIES.find(x=>x.id===p.cat).name;csv+=`${p.id},"${cat}","${p.name}",${SLABEL[s.f[p.id].s]},"${String(s.f[p.id].f).replace(/"/g,'""')}"\n`;});csv+="\n";});
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8;"}));a.download=`ITC_Compliance_${SITE?SITES[SITE].name.replace(/[^a-z0-9]/gi,''):'Portfolio'}.csv`;a.click();}
 </script>
 </body>
 </html>
