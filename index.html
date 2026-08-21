@@ -92,7 +92,7 @@ button{font-family:inherit;cursor:pointer}
 .badge .d{width:7px;height:7px;border-radius:50%}
 .tag{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px}
 
-/* ===== PORTFOLIO ===== */
+/* ===== WEBSITES OVERVIEW ===== */
 .pf-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:8px}
 .kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow)}
 .kpi .t{font-size:12px;color:var(--ink2)}
@@ -413,7 +413,7 @@ function statusBadge(st){return `<span class="badge soft-${st}"><span class="d b
 
 function renderSide(){
   const el=document.getElementById("navscroll");let h="";
-  h+=`<div class="nitem ${VIEW==='portfolio'?'active':''}" onclick="goPortfolio()"><span class="ico">📂</span><span class="nm">Portfolio Overview</span></div>`;
+  h+=`<div class="nitem ${VIEW==='portfolio'?'active':''}" onclick="goPortfolio()"><span class="ico">📂</span><span class="nm">Websites Overview</span></div>`;
   h+=`<div class="grp">Websites (${SITE_ORDER.length})</div>`;
   SITE_ORDER.forEach(k=>{const sc=score(counts(k)),rt=rating(sc);h+=`<div class="nitem ${(VIEW!=='portfolio'&&SITE===k)?'active':''}" onclick="goSite('${k}')"><span class="sdot bg-${rt[1]}"></span><span class="nm">${SITES[k].name}</span><span class="sc">${sc}%</span></div>`;});
   if(SITE&&VIEW!=='portfolio'){
@@ -431,10 +431,10 @@ function drillFromHeat(k,id){SITE=k;VIEW="section";CAT=id;QUERY="";render();}
 function render(){
   renderSide();document.getElementById("side").classList.remove("open");
   const cr=document.getElementById("crumb");
-  if(VIEW==="portfolio"){cr.innerHTML=`<b>Portfolio</b>`;document.getElementById("updated").textContent=`${SITE_ORDER.length} websites · Audited ${SITES[SITE_ORDER[0]]?.auditDate || ''}`;renderPortfolio();}
+  if(VIEW==="portfolio"){cr.innerHTML=`<b>Websites</b>`;document.getElementById("updated").textContent=`${SITE_ORDER.length} websites · Audited ${SITES[SITE_ORDER[0]]?.auditDate || ''}`;renderPortfolio();}
   else{document.getElementById("updated").textContent="Audited "+SITES[SITE].auditDate;
-    if(VIEW==="site"){cr.innerHTML=`<a onclick="goPortfolio()">Portfolio</a><span class="sep">›</span><b>${SITES[SITE].name}</b>`;renderSite();}
-    else{const cat=CATEGORIES.find(c=>c.id===CAT);cr.innerHTML=`<a onclick="goPortfolio()">Portfolio</a><span class="sep">›</span><a onclick="goSite('${SITE}')">${SITES[SITE].name}</a><span class="sep">›</span><b>${cat.name}</b>`;renderSection();}}
+    if(VIEW==="site"){cr.innerHTML=`<a onclick="goPortfolio()">Websites</a><span class="sep">›</span><b>${SITES[SITE].name}</b>`;renderSite();}
+    else{const cat=CATEGORIES.find(c=>c.id===CAT);cr.innerHTML=`<a onclick="goPortfolio()">Websites</a><span class="sep">›</span><a onclick="goSite('${SITE}')">${SITES[SITE].name}</a><span class="sep">›</span><b>${cat.name}</b>`;renderSection();}}
   window.scrollTo(0,0);
 }
 
@@ -444,9 +444,9 @@ function renderPortfolio(){
   const avg=Math.round(scoreSum/(SITE_ORDER.length||1));
   const kpis=`<div class="pf-kpis">
     <div class="kpi"><div class="t">Websites audited</div><div class="n">${SITE_ORDER.length}</div><div class="sub">59-parameter framework each</div></div>
-    <div class="kpi"><div class="t">Average compliance</div><div class="n s-${avg>=75?'pass':avg>=55?'warn':'fail'}">${avg}%</div><div class="sub">across portfolio</div></div>
+    <div class="kpi"><div class="t">Average compliance</div><div class="n s-${avg>=75?'pass':avg>=55?'warn':'fail'}">${avg}%</div><div class="sub">across websites</div></div>
     <div class="kpi"><div class="t">Critical non-compliances</div><div class="n s-fail">${totF}</div><div class="sub">require remediation</div></div>
-    <div class="kpi"><div class="t">Items to review</div><div class="n s-warn">${totW}</div><div class="sub">pending verification</div></div>
+    <div class="kpi"><div class="t">Non-Critical non-compliances</div><div class="n s-warn">${totW}</div><div class="sub">pending verification</div></div>
   </div>`;
   const cards=SITE_ORDER.map(k=>{const s=SITES[k],c=counts(k),sc=score(c),rt=rating(sc),iss=c.warn+c.fail;
     return `<div class="sitecard" onclick="goSite('${k}')"><div class="hd"><div class="ring" style="width:64px;height:64px">${ring(c,64)}<div class="val"><b class="s-${rt[1]}" style="font-size:16px">${sc}%</b></div></div><div class="nm"><b>${s.name}</b><small>${s.domain}</small></div></div>
@@ -469,16 +469,16 @@ function renderPortfolio(){
     return `<div class="pa"><div class="rank bg-fail">${i+1}</div><div class="pb"><div class="h">${it.p.name}
       <span class="sitepill" onclick="event.stopPropagation();drillFromHeat('${it.k}','${it.p.cat}')">${SITES[it.k].name}</span>
       <span class="sev soft-na">${cat.icon} ${cat.name}</span></div><div class="f">${it.f}</div></div></div>`;}).join("")
-    :`<div class="emptyok"><div class="big">✅</div><b>No critical non-compliances across the portfolio</b></div>`;
+    :`<div class="emptyok"><div class="big">✅</div><b>No critical non-compliances across websites</b></div>`;
 
   document.getElementById("content").innerHTML=`
-    <div class="page-h"><h2>Portfolio Compliance Overview</h2><p>Consolidated view across all 23 audited ITC web properties · 59-parameter governance framework</p></div>
+    <div class="page-h"><h2>Websites Compliance Overview</h2><p>Consolidated view across all 23 audited ITC web properties · 59-parameter governance framework</p></div>
     ${kpis}
     <div class="block-title">Websites <span class="hint">— click a card to open its detailed audit</span></div>
     <div class="sitecards">${cards}</div>
     <div class="block-title">Section compliance heatmap <span class="hint">— sections × websites · click any cell to drill in</span></div>
     <div class="card pad">${heat}</div>
-    <div class="block-title">Priority actions across portfolio <span class="hint">— every critical non-compliance, ranked</span></div>
+    <div class="block-title">Priority actions across websites <span class="hint">— every critical non-compliance, ranked</span></div>
     <div class="card">${pa}</div>`;
 }
 
@@ -547,7 +547,7 @@ function viewSecurity(s){const items=[[54,"🔐","SSL / TLS"],[55,"📜","CAA Re
 
 function downloadCSV(){const rows=SITE?[SITE]:SITE_ORDER;let csv="ITC Website Compliance Audit\n\n";
   rows.forEach(k=>{const s=SITES[k],c=counts(k),sc=score(c);csv+=`Website,${s.name}\nDomain,${s.domain}\nDivision,${s.division}\nAudit Date,${s.auditDate}\nReference,${s.ref}\nOverall,${sc}%\nCompliant,${c.pass}\nAttention,${c.warn}\nNon-Compliant,${c.fail}\nN/A,${c.na}\nInfo,${c.info}\nID,Section,Parameter,Status,Finding\n`;PARAMS.forEach(p=>{const cat=CATEGORIES.find(x=>x.id===p.cat).name;csv+=`${p.id},"${cat}","${p.name}",${SLABEL[s.f[p.id].s]},"${String(s.f[p.id].f).replace(/"/g,'""')}"\n`;});csv+="\n";});
-  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8;"}));a.download=`ITC_Compliance_${SITE?SITES[SITE].name.replace(/[^a-z0-9]/gi,''):'Portfolio'}.csv`;a.click();}
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8;"}));a.download=`ITC_Compliance_${SITE?SITES[SITE].name.replace(/[^a-z0-9]/gi,''):'Websites'}.csv`;a.click();}
 </script>
 </body>
 </html>
