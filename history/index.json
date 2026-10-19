@@ -1,5 +1,10 @@
 [
   {
+    "date": "2026-10-19",
+    "display": "19 Oct 2026",
+    "file": "history/audit_2026-10-19.json"
+  },
+  {
     "date": "2026-10-12",
     "display": "12 Oct 2026",
     "file": "history/audit_2026-10-12.json"
